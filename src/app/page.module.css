@@ -144,24 +144,54 @@ a.secondary {
 
 .float {
   position: absolute;
-  background-color: #383838;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .flowtingDiv {
   width: 170px;
-  height: 160px;
   top: 30px;
   left: 0px;
-
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .flowtingDivLower {
   width: 170px;
-  height: 150px;
+
   right: 20px;
   top: 250px;
   z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  
+}
+.circleItem{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+
+}
+.floatContent{
+
+  text-align: center;
+}
+.floatContent h6{
+  font-weight: 600;
+}
+.floatContent p{
+  font-weight: bold;
+  font-size: 2rem;
+  
 }
 
 /* Enable hover only on non-touch devices */

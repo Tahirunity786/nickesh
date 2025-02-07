@@ -20,24 +20,50 @@ export default function Home() {
             </button>
 
           </div>
-          <div className="col-lg-5" style={{position:"relative"}}>
-            <div className={`${styles.flowtingDiv} ${styles.float}`}></div>
-            <div className={`${styles.flowtingDivLower} ${styles.float}`}></div>
+          <div className="col-lg-5" style={{ position: "relative" }}>
+            <div className={`${styles.flowtingDiv} ${styles.float}`}>
+              <div className={`${styles.circleItem}`} style={{backgroundColor:"#12BB6A"}}>
+                <Image
+                  src={'/Images/icon2.svg'}
+                  width={30}
+                  height={30}
+                  alt="icon"
+                />
+              </div>
+              <div className={`${styles.floatContent}`}>
+                <h6>Total Students</h6>
+                <p>17K</p>
+              </div>
+            </div>
+            <div className={`${styles.flowtingDivLower} ${styles.float}`}>
+              <div className={`${styles.circleItem}`} style={{position:"absolute", top:"-20px", backgroundColor:"#8121FB"}}>
+                <Image
+                  src={'/Images/icon2.svg'}
+                  width={30}
+                  height={30}
+                  alt="icon"
+                />
+              </div>
+              <div className={`${styles.floatContent}`} style={{ background: "#F5F5F5", padding: "10px 15px", borderRadius: "10px" }}>
+                <h6 className="mt-4">Certified Pilots</h6>
+                <p className="mb-0">16K</p>
+              </div>
+            </div>
             <div className={styles.superImage}>
 
-            <Image
-              src={'Images/pilot-super.svg'}
-              width={500}
-              height={500}
-              alt="super image"
-              
+              <Image
+                src={'Images/pilot-super.svg'}
+                width={500}
+                height={500}
+                alt="super image"
+
               />
-              </div>
+            </div>
           </div>
         </div>
 
       </section>
-      <MarqueeCarousel/>
+      <MarqueeCarousel />
     </>
   );
 }
