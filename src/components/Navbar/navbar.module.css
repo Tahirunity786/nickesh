@@ -1,0 +1,33 @@
+.navButtonAeroWarning {
+    background-color: #FFA726;
+    color: black;
+    padding: 8px 30px;
+}
+.navButtonAeroPrimary {
+    background-color: var(--aero-primary);
+    color: var(--aero-white);
+    padding: 8px 20px;
+    
+}
+.navBtnAro{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+
+}
+.navigation{
+    background-color: var(--aero-bg);
+    border-radius: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 9px;
+    padding-right: 9px;
+    font-size: 16px;
+}
+.activeItem{
+    background-color: var(--aero-blue);
+    color: var(--aero-white);
+    padding: 8px 16px;
+    border-radius: 500px;
+}
