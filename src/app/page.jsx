@@ -1,8 +1,18 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import MarqueeCarousel from "@/components/MarqueeCarousel/MarqueeCarousel";
+import Carousal from "@/components/Carousal/Carousal";
 
 export default function Home() {
+
+  const cards = [
+    {id:1, title: "Germany",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:8000, activeUsers:25000 ,image:"/Images/Countries/1.svg", description: "This is the first card." },
+    {id:2, title: "Germany",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:8000, activeUsers:25000 ,image:"/Images/Countries/1.svg", description: "This is the first card." },
+    {id:3, title: "Germany",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:8000, activeUsers:25000 ,image:"/Images/Countries/1.svg", description: "This is the first card." },
+    {id:4, title: "Germany",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:8000, activeUsers:25000 ,image:"/Images/Countries/1.svg", description: "This is the first card." },
+    {id:5, title: "Germany",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:8000, activeUsers:25000 ,image:"/Images/Countries/1.svg", description: "This is the first card." },
+   
+  ];
   return (
     <>
       <section className="container mt-5">
@@ -22,7 +32,7 @@ export default function Home() {
           </div>
           <div className="col-lg-5" style={{ position: "relative" }}>
             <div className={`${styles.flowtingDiv} ${styles.float}`}>
-              <div className={`${styles.circleItem}`} style={{backgroundColor:"#12BB6A"}}>
+              <div className={`${styles.circleItem}`} style={{ backgroundColor: "#12BB6A" }}>
                 <Image
                   src={'/Images/icon2.svg'}
                   width={30}
@@ -36,7 +46,7 @@ export default function Home() {
               </div>
             </div>
             <div className={`${styles.flowtingDivLower} ${styles.float}`}>
-              <div className={`${styles.circleItem}`} style={{position:"absolute", top:"-20px", backgroundColor:"#8121FB"}}>
+              <div className={`${styles.circleItem}`} style={{ position: "absolute", top: "-20px", backgroundColor: "#8121FB" }}>
                 <Image
                   src={'/Images/icon2.svg'}
                   width={30}
@@ -64,6 +74,13 @@ export default function Home() {
 
       </section>
       <MarqueeCarousel />
+      <section style={{marginTop:"50px"}}>
+        <div className="mb-3 text-center">
+          <h4 style={{fontWeight:"bold", marginBottom:"20px"}}>Our Database Contains Following <span style={{color:"#1A73E8"}}>Countries</span></h4>
+          <p>Choose your aviation authority to access region-specific ATPL exam questions and study materials</p>
+        </div>
+        <Carousal cards={cards} />
+      </section>
     </>
   );
 }
