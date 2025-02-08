@@ -156,7 +156,7 @@ a.secondary {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
 }
 
 .flowtingDivLower {
@@ -168,10 +168,11 @@ a.secondary {
   display: flex;
   flex-direction: column;
   align-items: center;
- 
-  
+
+
 }
-.circleItem{
+
+.circleItem {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -181,17 +182,49 @@ a.secondary {
   margin-bottom: 10px;
 
 }
-.floatContent{
+
+.floatContent {
 
   text-align: center;
 }
-.floatContent h6{
+
+.floatContent h6 {
   font-weight: 600;
 }
-.floatContent p{
+
+.floatContent p {
   font-weight: bold;
   font-size: 2rem;
-  
+
+}
+
+.btn {
+  outline: none;
+  border: none;
+  padding: 15px 0px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.btnPrimary {
+  background-color: var(--aero-primary);
+  color: var(--aero-white);
+  transition: all .3s ease-in-out;
+}
+
+.btnOutlineprimary {
+  border: 2px solid var(--aero-primary);
+  background-color: var(--aero-white);
+  color: #1a1a1a;
+  transition: all .3s ease-in-out;
+}
+.btnPrimary:hover{
+  background-color: var(--aero-primary-hover);
+  color: white;
+}
+.btnOutlineprimary:hover {
+background-color: var(--aero-primary);
+color: white;
 }
 
 /* Enable hover only on non-touch devices */

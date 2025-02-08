@@ -131,23 +131,174 @@ export default function Home() {
           <p>Choose your aviation authority to access region-specific ATPL exam questions and study materials</p>
         </div>
         <UltraMarqueeCarousel cards={cards} />
-        <div style={{ position: "relative", marginTop:"100px", height:"auto"}} className="text-end">
+        <div style={{ position: "relative", marginTop: "100px", height: "auto" }} className="text-end">
           <Image
             src={'/Images/11.svg'}
             width={132}
             height={82}
             alt="aeroplane"
-            style={{position:"absolute", top:"-50px", right:"10%"}}
+            style={{ position: "absolute", top: "-50px", right: "10%" }}
           />
           <Image
-          src={'/Images/12.svg'}
-          width={498}
-          height={106}
-          alt="aeroplane"
-          
+            src={'/Images/12.svg'}
+            width={498}
+            height={106}
+            alt="aeroplane"
+
           />
         </div>
 
+      </section>
+      <section className="container" style={{ marginBottom: "50px" }}>
+        <div className="mb-3 text-center">
+          <h4 style={{ fontWeight: "bold" }}>Our Success Stories</h4>
+        </div>
+        <div className="row" style={{ marginBottom: "50px" }}>
+          <div className="col-lg-3">
+            <div className="card h-100 shadow-sm border border-light rounded-4">
+              <div className="card-body text-center">
+                <div className="text-center mb-2">
+                  <Image
+                    src={'/Images/users.svg'}
+                    width={25}
+                    height={25}
+                    alt="users"
+                  />
+                </div>
+                <h6 style={{ fontWeight: "bold" }}>17,000+</h6>
+                <p className="mb-0">Students Trained</p>
+
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-3">
+            <div className="card h-100 shadow-sm border border-light rounded-4">
+              <div className="card-body text-center">
+                <div className="text-center mb-2">
+                  <Image
+                    src={'/Images/graduation-cap.svg'}
+                    width={25}
+                    height={25}
+                    alt="users"
+                  />
+                </div>
+                <h6 style={{ fontWeight: "bold" }}>99%</h6>
+                <p className="mb-0">Pass Rate</p>
+
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-3">
+            <div className="card h-100 shadow-sm border border-light rounded-4">
+              <div className="card-body text-center">
+                <div className="text-center mb-2">
+                  <Image
+                    src={'/Images/star.svg'}
+                    width={25}
+                    height={25}
+                    alt="users"
+                  />
+                </div>
+                <h6 style={{ fontWeight: "bold" }}>4.95</h6>
+                <p className="mb-0">Students Rating</p>
+
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-3">
+            <div className="card shadow-sm border border-light rounded-4">
+              <div className="card-body text-center">
+                <div className="text-center mb-2">
+                  <Image
+                    src={'/Images/book-open.svg'}
+                    width={25}
+                    height={25}
+                    alt="users"
+                  />
+                </div>
+                <h6 style={{ fontWeight: "bold" }}>14</h6>
+                <p className="mb-0">Course Modules</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row mb-3">
+          <div className="col-lg-6">
+            <p>When you choose ATPL Pro, you tap into years of aviation expertise. Our cutting-edge platform, combined with top-tier instructors, ensures you’re more than just ‘exam ready’—you’re ready to thrive in the cockpit. Whether you’re targeting EASA, FAA, or other regulatory exams, trust our proven approach to help you soar.</p>
+            <div className="card shadow-sm border border-light rounded-4 mb-3">
+              <div className="card-body d-flex justify-content-start">
+                <div className="text-center mb-2 me-3">
+                  <Image
+                    src={'/Images/prideBadge.svg'}
+                    width={25}
+                    height={25}
+                    alt="users"
+                  />
+                </div>
+                <div>
+
+                  <h6 style={{ fontWeight: "bold" }}>Industry Leading Database</h6>
+                  <p className="mb-0">Comprehensive study materials developed by experienced airline captains</p>
+
+                </div>
+              </div>
+            </div>
+            <div className="card shadow-sm border border-light rounded-4 mb-3">
+              <div className="card-body d-flex justify-content-start">
+                <div className="text-center mb-2 me-3">
+                  <Image
+                    src={'/Images/multiUser.svg'}
+                    width={25}
+                    height={25}
+                    alt="users"
+                  />
+                </div>
+                <div>
+
+                  <h6 style={{ fontWeight: "bold" }}>Expert Support</h6>
+                  <p className="mb-0">Get guidance from expert support</p>
+
+                </div>
+              </div>
+            </div>
+            <div className="card shadow-sm border border-light rounded-4 mb-3">
+              <div className="card-body d-flex justify-content-start">
+                <div className="text-center mb-2 me-3">
+                  <Image
+                    src={'/Images/graduation-cap.svg'}
+                    width={25}
+                    height={25}
+                    alt="users"
+                  />
+                </div>
+                <div>
+
+                  <h6 style={{ fontWeight: "bold" }}>Proven Track Record</h6>
+                  <p className="mb-0">Join our community of successful pilots worldwide</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div className="row w-75 mt-4">
+              <div className="col-lg-6">
+                <button className={`${styles.btn} ${styles.btnPrimary}`}>E Shop</button>
+              </div>
+              <div className="col-lg-6">
+              <button className={`${styles.btn} ${styles.btnOutlineprimary}`}>Sign Up</button>
+              </div>
+            </div>
+
+          </div>
+          <div className="col-lg-6">
+          <div className="card shadow-sm h-100 border border-light rounded-4 mb-3">
+              <div className="card-body d-flex justify-content-start">
+                
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
     </>
