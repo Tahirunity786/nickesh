@@ -55,8 +55,29 @@ const Carousel = ({ cards = [] }) => {
                   <h5 className="card-title fw-bold">{card.title}</h5>
                   <p className="card-text text-muted mb-0">{card.slogan}</p>
                   <span style={{ fontSize: "12px", marginBottom: "15px" }}>Real exam level questions</span>
-                  <div className="d-">
+                  <div className="d-flex justify-content-start align-items-center">
 
+                    <div className="me-2">
+                      <Image
+                        src={'/Images/crimage2.svg'}
+                        width={18}
+                        height={15}
+                        alt="book"
+                      />
+                    </div>
+                    <span className="mb-0">{card.questions}</span>
+                  </div>
+                  <div className="d-flex justify-content-start align-items-center">
+
+                    <div className="me-2">
+                      <Image
+                        src={'/Images/crimage1.svg'}
+                        width={18}
+                        height={15}
+                        alt="group"
+                      />
+                    </div>
+                    <span className="mb-0">{card.activeUsers}</span>
                   </div>
                 </div>
               </div>
