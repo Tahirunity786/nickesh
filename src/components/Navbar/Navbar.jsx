@@ -19,7 +19,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="navbar navbar-expand-lg bg-white py-3 pt-0">
+    <nav className="navbar navbar-expand-lg bg-white py-3 pt-0" style={{position:"relative"}}>
       <div className="container">
         {/* Logo */}
         <Link className="navbar-brand" href="/">
@@ -37,7 +37,6 @@ export default function Navbar() {
         </button>
 
         {/* Navbar Items */}
-        <div className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`}>
           <ul className={`navbar-nav mx-auto ${styles.navigation}`}>
             {navItems.map(({ name, path }) => (
               <li className="nav-item" key={path}>
@@ -53,7 +52,8 @@ export default function Navbar() {
             <button type="button" className={`${styles.navButtonAeroWarning} ${styles.navBtnAro}`} >E-Shop</button>
             <button type="button" className={`${styles.navButtonAeroPrimary} ${styles.navBtnAro}`}>Sign In</button>
           </div>
-        </div>
+        {/* <div className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`} style={{position:"relative"}}> */}
+        {/* </div> */}
       </div>
     </nav>
   );

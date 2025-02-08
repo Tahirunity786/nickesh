@@ -17,15 +17,16 @@
     font-weight: 600;
 
 }
-.navigation{
+.navigation {
     background-color: var(--aero-bg);
     border-radius: 500px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 9px;
-    padding-right: 9px;
+    padding: 9px 9px;
     font-size: 16px;
+    position: sticky;
+    top: 0;  /* Make it stick at the very top */
+    z-index: 1000;
 }
+
 .activeItem{
     background-color: var(--aero-blue);
     color: var(--aero-white);

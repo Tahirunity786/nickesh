@@ -193,7 +193,7 @@ export default function Home() {
               <div className="card-body text-center">
                 <div className="text-center mb-2">
                   <Image
-                    src={'/Images/star.svg'}
+                    src={'/Images/blue-star.svg'}
                     width={25}
                     height={25}
                     alt="users"
@@ -283,10 +283,10 @@ export default function Home() {
 
             <div className="row w-75 mt-4">
               <div className="col-lg-6">
-                <button className={`${styles.btn} ${styles.btnPrimary}`}>E Shop</button>
+                <button className={`${styles.btn} ${styles.btnPrimary} mb-3`}>E Shop</button>
               </div>
               <div className="col-lg-6">
-              <button className={`${styles.btn} ${styles.btnOutlineprimary}`}>Sign Up</button>
+              <button className={`${styles.btn} ${styles.btnOutlineprimary} mb-3`}>Sign Up</button>
               </div>
             </div>
 
