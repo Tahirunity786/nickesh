@@ -1,38 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import MarqueeCarousel from "@/components/MarqueeCarousel/MarqueeCarousel";
-import Carousal from "@/components/Carousal/Carousal";
-
+import UltraMarqueeCarousel from "@/components/Carousal/Carousal";
+import cards from '@/app/icData'
 export default function Home() {
 
-  const cards = [
-    {id:1, image:"/Images/Countries/1.svg", title: "Germany",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users" , description: "This is the first card." },
-    {id:2, image:"/Images/Countries/2.svg", title: "UK CAA",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:3, image:"/Images/Countries/3.svg", title: "Portugal",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:4, image:"/Images/Countries/4.svg", title: "Spain",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:5, image:"/Images/Countries/5.svg", title: "Austria",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:6, image:"/Images/Countries/6.svg", title: "Belgium",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:7, image:"/Images/Countries/7.svg", title: "Czech Republic",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:8, image:"/Images/Countries/8.svg", title: "Greece",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:9, image:"/Images/Countries/9.svg", title: "Iceland",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:10, image:"/Images/Countries/10.svg", title: "Luxemburg",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:11, image:"/Images/Countries/11.svg", title: "Malta",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:12, image:"/Images/Countries/12.svg", title: "Montenegro",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:13, image:"/Images/Countries/13.svg", title: "Norway",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:14, image:"/Images/Countries/14.svg", title: "Romania",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:15, image:"/Images/Countries/15.svg", title: "Slovenia",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:16, image:"/Images/Countries/16.svg", title: "Botswana",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:17, image:"/Images/Countries/17.svg", title: "Burundi",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:18, image:"/Images/Countries/18.svg", title: "Kenya",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:19, image:"/Images/Countries/19.svg", title: "Namibia",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:20, image:"/Images/Countries/20.svg", title: "Rwanda",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:21, image:"/Images/Countries/21.svg", title: "South Africa",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:22, image:"/Images/Countries/22.svg", title: "Tanzania",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:23, image:"/Images/Countries/23.svg", title: "Uganda",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:24, image:"/Images/Countries/24.svg", title: "UAE",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-    {id:25, image:"/Images/Countries/25.svg", title: "Qatar",slogan:"Professional Flight Exam Prep",subSlogan:"Real exam level questions", questions:"8,000+ Questions", activeUsers:"25K+ Active Users"  , description: "This is the first card." },
-   
-  ];
+  
   return (
     <>
       <section className="container mt-5">
@@ -68,7 +41,7 @@ export default function Home() {
             <div className={`${styles.flowtingDivLower} ${styles.float}`}>
               <div className={`${styles.circleItem}`} style={{ position: "absolute", top: "-20px", backgroundColor: "#8121FB" }}>
                 <Image
-                  src={'/Images/icon2.svg'}
+                  src={'/Images/icon1.svg'}
                   width={30}
                   height={30}
                   alt="icon"
@@ -94,12 +67,12 @@ export default function Home() {
 
       </section>
       <MarqueeCarousel />
-      <section style={{marginTop:"50px"}}>
+      <section style={{ marginTop: "50px" }}>
         <div className="mb-3 text-center">
-          <h4 style={{fontWeight:"bold", marginBottom:"20px"}}>Our Database Contains Following <span style={{color:"#1A73E8"}}>Countries</span></h4>
+          <h4 style={{ fontWeight: "bold", marginBottom: "20px" }}>Our Database Contains Following <span style={{ color: "#1A73E8" }}>Countries</span></h4>
           <p>Choose your aviation authority to access region-specific ATPL exam questions and study materials</p>
         </div>
-        <Carousal cards={cards} />
+        <UltraMarqueeCarousel cards={cards} />
       </section>
     </>
   );
