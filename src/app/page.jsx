@@ -516,18 +516,100 @@ export default function Home() {
           <p style={{ fontSize: "14px" }}>Trusted more than +17K customers</p>
         </div>
 
-        <div className="d-flex justify-content-center align-items-center mb-4">
+        <div className="d-flex justify-content-center align-items-center mb-5">
           <div className="me-3 ms-3">
             <button className={styles.activenav}>About</button>
           </div>
           <div className="me-3 ms-3">
-            <button className={styles.activenav}>Our Services</button>
+            <button className={styles.outlinenav}>Our Services</button>
           </div>
           <div className="me-3 ms-3">
-            <button className={styles.activenav}>Support</button>
+            <button className={styles.outlinenav}>Support</button>
           </div>
         </div>
 
+        <div className="row">
+          <div className="col-lg-6">
+            <Image
+              src={'/Images/background__82221.svg'}
+              width={300}
+              height={300}
+              alt="fqs"
+              className="w-100"
+            />
+          </div>
+          <div className="col-lg-6">
+            <div className="card shadow-sm border border-light rounded-4 mb-3">
+              <div className="card-body d-flex justify-content-start align-items-center">
+                <div className="text-center me-3">
+                  <Image
+                    src={'/Images/plus.svg'}
+                    width={25}
+                    height={25}
+                    alt="users"
+                  />
+                </div>
+                <div>
+
+                  <h6 className="mb-0" style={{ fontWeight: "bold" }}>Are the questions on ATPLPro the same as those in the real EASA exam?</h6>
+
+                </div>
+              </div>
+            </div>
+            <div className="card shadow-sm border border-light rounded-4 mb-3">
+              <div className="card-body d-flex justify-content-start align-items-center">
+                <div className="text-center me-3">
+                  <Image
+                    src={'/Images/plus.svg'}
+                    width={25}
+                    height={25}
+                    alt="users"
+                  />
+                </div>
+                <div>
+
+                  <h6 className="mb-0" style={{ fontWeight: "bold" }}>Which examination database is currently implemented in my country?</h6>
+
+                </div>
+              </div>
+            </div>
+            <div className="card shadow-sm border border-light rounded-4 mb-3">
+              <div className="card-body d-flex justify-content-start align-items-center">
+                <div className="text-center me-3">
+                  <Image
+                    src={'/Images/plus.svg'}
+                    width={25}
+                    height={25}
+                    alt="users"
+                  />
+                </div>
+                <div>
+
+                  <h6 className="mb-0" style={{ fontWeight: "bold" }}>Does ATPLPro help save time in exam preparation?</h6>
+
+                </div>
+              </div>
+            </div>
+            <div className="card shadow-sm border border-light rounded-4 mb-3">
+              <div className="card-body d-flex justify-content-start align-items-center">
+                <div className="text-center me-3">
+                  <Image
+                    src={'/Images/plus.svg'}
+                    width={25}
+                    height={25}
+                    alt="users"
+                  />
+                </div>
+                <div>
+
+                  <h6 className="mb-0" style={{ fontWeight: "bold" }}>How often are new questions added?</h6>
+
+                </div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
       </section>
     </>
   );

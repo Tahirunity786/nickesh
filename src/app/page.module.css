@@ -247,10 +247,11 @@ a.secondary {
 }
 
 .outlinenav{
-  border: var(--aero-primary);
-  color: var(--aero-white);
+  border: 2px solid var(--aero-primary);
+  color: black;
   padding: 7px 16px;
   border-radius: 500px;
+  background-color: white;
   
 }
 .activenav{
