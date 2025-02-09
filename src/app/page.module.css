@@ -261,6 +261,20 @@ a.secondary {
   border-radius: 500px;
   border: none;
 }
+.curveLineleft{
+  transform: rotate(10deg); /* Rotates the arc 5 degrees */
+  transform-origin: center; /* Ensures it rotates around the center */
+  position: absolute;
+  top: -61px;
+  left: 110px;
+}
+.curveLineRight{
+  transform: rotate(-10deg); /* Rotates the arc 5 degrees */
+  transform-origin: center; /* Ensures it rotates around the center */
+  position: absolute;
+  top: -61px;
+  right: 110px;
+}
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {

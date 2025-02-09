@@ -67,10 +67,31 @@ export default function Home() {
 
       </section>
       <MarqueeCarousel />
-      <section className="container" style={{ marginTop: "50px", marginBottom: "50px", height: "auto" }}>
+      <section className="container" style={{ marginTop: "50px", marginBottom: "50px", height: "auto", position: "relative" }}>
         <div className="text-center mb-4">
           <h4 style={{ fontWeight: "bold", marginBottom: "70px" }}>Your Path To ATPL Success</h4>
         </div>
+
+        <svg className={styles.curveLineleft} width="50%" height="180" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 10 110 A 160 80 0 0 1 290 110"
+            stroke="black"
+            fill="transparent"
+            stroke-width="2"
+            stroke-dasharray="5,5"
+            transform="translate(0, 40)" />
+        </svg>
+        <svg className={styles.curveLineRight} width="50%" height="180" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 10 110 A 160 80 0 0 1 290 110"
+            stroke="black"
+            fill="transparent"
+            stroke-width="2"
+            stroke-dasharray="5,5"
+            transform="translate(0, 40)" />
+        </svg>
+
+
+
+
         <div className="row">
           <div className="col-lg-4 p-3" style={{ position: "relative" }}>
             <div className={`${styles.circleItem}`} style={{ backgroundColor: "#1A73E8", position: "absolute", zIndex: "100", top: "-20px", left: "44%", right: "44%" }}>
@@ -89,7 +110,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 p-3" style={{ position: "relative" }}>
+          <div className="col-lg-4 p-3" style={{ position: "relative", top: "50px" }}>
             <div className={`${styles.circleItem}`} style={{ backgroundColor: "#FFA726", position: "absolute", zIndex: "100", top: "-20px", left: "44%", right: "44%" }}>
               <Image
                 src={'/Images/icon3.svg'}
@@ -607,7 +628,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          
+
           </div>
         </div>
       </section>

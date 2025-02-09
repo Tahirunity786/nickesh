@@ -6,7 +6,7 @@ import Link from 'next/link'
 const Footer = () => {
     return (
         <footer className={styles.footer}>
-            <div className="container p-3">
+            <div className="container p-3 pt-5">
                 <div className="row">
                     <div className="col-lg-4">
                         <h5 className='text-light'>PassATPL Pro</h5>
@@ -50,21 +50,21 @@ const Footer = () => {
                     <div className="col-lg-2">
                         <h5 className='text-light mb-4'>Quick Links</h5>
                         <ul className='text-light ps-0' style={{ listStyle: "none" }}>
-                            <li className='mb-3'><Link href={'#'}>Home</Link></li>
-                            <li className='mb-3'><Link href={'#'}>About Us</Link></li>
-                            <li className='mb-3'><Link href={'#'}>Study Materials</Link></li>
-                            <li className='mb-3'><Link href={'#'}>Questions Banks</Link></li>
-                            <li className='mb-3'><Link href={'#'}>Success Stories</Link></li>
+                            <li className='mb-3'><Link style={{fontSize:"14px"}} href={'#'}>Home</Link></li>
+                            <li className='mb-3'><Link style={{fontSize:"14px"}} href={'#'}>About Us</Link></li>
+                            <li className='mb-3'><Link style={{fontSize:"14px"}} href={'#'}>Study Materials</Link></li>
+                            <li className='mb-3'><Link style={{fontSize:"14px"}} href={'#'}>Questions Banks</Link></li>
+                            <li className='mb-3'><Link style={{fontSize:"14px"}} href={'#'}>Success Stories</Link></li>
                         </ul>
                     </div>
                     <div className="col-lg-2">
                         <h5 className='text-light mb-4'>Resources </h5>
                         <ul className='text-light ps-0' style={{ listStyle: "none" }}>
-                            <li className='mb-3'><Link href={'#'}>ATPL Subjects</Link></li>
-                            <li className='mb-3'><Link href={'#'}>Mock Test</Link></li>
-                            <li className='mb-3'><Link href={'#'}>Study Tips</Link></li>
-                            <li className='mb-3'><Link href={'#'}>Blogs</Link></li>
-                            <li className='mb-3'><Link href={'#'}>Faqs</Link></li>
+                            <li className='mb-3'><Link style={{fontSize:"14px"}} href={'#'}>ATPL Subjects</Link></li>
+                            <li className='mb-3'><Link style={{fontSize:"14px"}} href={'#'}>Mock Test</Link></li>
+                            <li className='mb-3'><Link style={{fontSize:"14px"}} href={'#'}>Study Tips</Link></li>
+                            <li className='mb-3'><Link style={{fontSize:"14px"}} href={'#'}>Blogs</Link></li>
+                            <li className='mb-3'><Link style={{fontSize:"14px"}} href={'#'}>Faqs</Link></li>
                         </ul>
                     </div>
                     <div className="col-lg-4">
@@ -73,7 +73,7 @@ const Footer = () => {
                         <form action="#" method="post">
 
                             <div className="row">
-                                <div className="col-lg-8">
+                                <div className="col-lg-8 mb-3">
                                     <input type="text" className='form-control' placeholder='Enter you email' />
                                 </div>
                                 <div className="col-lg-4">
@@ -85,8 +85,8 @@ const Footer = () => {
                 </div>
             </div>
             <hr className='mb-0'/>
-            <div className="text-center">
-            <p className='mb-0 text-light'>© 2024 PassATPL Pro. All rights reserved. | <Link className='nav-link'style={{display:"inline-block"}} href={'#'}> Terms of Service </Link>| <Link className='nav-link'style={{display:"inline-block"}} href={'#'}> Privacy Policy</Link></p>
+            <div className="text-center pb-3">
+            <p className='mb-0 text-light'>© 2024 PassATPL Pro. All rights reserved. | <Link className='nav-link'style={{display:"inline-block"}} href={'#'}> Terms of Service </Link> | <Link className='nav-link'style={{display:"inline-block"}} href={'#'}> Privacy Policy</Link></p>
             </div>
                 
         </footer>
