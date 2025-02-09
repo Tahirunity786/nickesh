@@ -246,6 +246,21 @@ a.secondary {
   /* Ensure it takes up space */
 }
 
+.outlinenav{
+  border: var(--aero-primary);
+  color: var(--aero-white);
+  padding: 7px 16px;
+  border-radius: 500px;
+  
+}
+.activenav{
+  background-color: var(--aero-primary);
+  color: var(--aero-white);
+  padding: 8px 16px;
+  border-radius: 500px;
+  border: none;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {

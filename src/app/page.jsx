@@ -511,10 +511,23 @@ export default function Home() {
       </section>
 
       <section className="container">
-      <div className="text-center" style={{ position: "relative", marginBottom: "50px" }}>
-            <h4 style={{ fontWeight: "bold" }}>Frequently Asked <span style={{ color: "#1A73E8" }}>Order</span></h4>
-            <p style={{ fontSize: "14px" }}>Choose your path to aviation excellence with our tailored solutions</p>
+        <div className="text-center" style={{ position: "relative", marginBottom: "30px" }}>
+          <h4 style={{ fontWeight: "bold" }}>Frequently Asked <span style={{ color: "#1A73E8" }}>Questions</span></h4>
+          <p style={{ fontSize: "14px" }}>Trusted more than +17K customers</p>
+        </div>
+
+        <div className="d-flex justify-content-center align-items-center mb-4">
+          <div className="me-3 ms-3">
+            <button className={styles.activenav}>About</button>
           </div>
+          <div className="me-3 ms-3">
+            <button className={styles.activenav}>Our Services</button>
+          </div>
+          <div className="me-3 ms-3">
+            <button className={styles.activenav}>Support</button>
+          </div>
+        </div>
+
       </section>
     </>
   );
