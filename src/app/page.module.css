@@ -253,6 +253,7 @@ a.secondary {
   padding: 7px 16px;
   border-radius: 500px;
   background-color: white;
+  transition: all .3s ease-in-out;
   
 }
 .activenav{
@@ -262,6 +263,11 @@ a.secondary {
   border-radius: 500px;
   border: none;
   border: 2px solid var(--aero-primary);
+}
+.outlinenav:hover{
+  background-color: var(--aero-primary);
+  color: white;
+  
 }
 .curveLineleft{
   transform: rotate(10deg); /* Rotates the arc 5 degrees */

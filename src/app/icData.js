@@ -27,4 +27,62 @@ const cards = [
 
   ];
 
-export default cards;
+const faqs = {
+  about: [
+    {
+      question: "Are the questions on ATPLPro the same as those in the real EASA exam?",
+      answer: "Yes, the questions on ATPLPro are identical to those you will encounter in the actual EASA exam. Our database is meticulously updated to reflect the latest ECQB (European Central Question Bank) standards, ensuring you are fully prepared for the real test."
+    },
+    {
+      question: "Which examination database is currently implemented in my country?",
+      answer: "Most countries now use the latest ECQB database for pilot licensing examinations. The following aviation authorities have adopted this database: Austria, Belgium, Czech Republic, Germany, Greece, Iceland, Luxembourg, Malta, Montenegro, Norway, Romania, Slovenia, Spain, the UK CAA, and Portugal. Additionally, several aviation authorities outside Europe, including Botswana, Burundi, Kenya, Namibia, Rwanda, South Africa, Tanzania, Uganda, Dubai, and Qatar, also utilize the latest ECQB database."
+    },
+    {
+      question: "How often are new questions added?",
+      answer: "At ATPLPro, our experts add new questions daily and ensure outdated ones are removed, maintaining an up-to-date database. While we strive for regular updates—at least weekly, often daily—our primary goal is to help students truly understand aviation theory, not just pass exams. We believe that a solid theoretical foundation is crucial, especially as the real test begins during airline interviews."
+    },
+    {
+      question: "Does ATPLPro help save time in exam preparation?",
+      answer: "Absolutely. ATPLPro is designed to optimize your study time by providing top-quality, highly accurate questions tailored to ensure exam success. Our intelligent system prevents unnecessary repetition of questions you have already mastered, allowing you to focus on areas that require more attention."
+    }
+  ],
+  service: [
+    {
+      question: "Which databases does ATPLPro provide?",
+      answer: "ATPLPro offers a comprehensive range of question databases to support your aviation training. Our platform includes: ATPL (A/H) – Airline Transport Pilot License for both Aeroplanes and Helicopters, PPL (A/H) – Private Pilot License for both Aeroplanes and Helicopters, Instrument Rating (A/H) – Instrument Rating for both Aeroplanes and Helicopters, and a free Drone Course."
+    },
+    {
+      question: "I am a CPL student. Can I use the ATPL database?",
+      answer: "Absolutely—without a doubt! The ATPL database is fully suitable for CPL students. There is only a slight difference between ATPL and CPL questions, as confirmed by the EASA syllabus. By using the ATPLPro database, CPL students can confidently prepare with high-quality questions that align closely with their syllabus, ensuring a strong foundation for their exams and future career progression."
+    },
+    {
+      question: "Can I access both ATPL Aeroplane and Helicopter databases with one subscription?",
+      answer: "Yes, we provide access to both ATPL, PPL databases for Aeroplanes and Helicopters under a single subscription. However, for the Instrument Rating (IR) database, a separate subscription is required. This ensures you receive the most relevant and focused study material for your specific training needs."
+    },
+    {
+      question: "In which languages is the question database available?",
+      answer: "Our question database is available in English. We are committed to providing high-quality training material in this language to ensure clarity and precision, allowing students to prepare effectively for their exams."
+    }
+  ],
+  support: [
+    {
+      question: "Where can I contact if I have queries regarding subscription issues or the database?",
+      answer: "You can contact us at support@atplpro.eu for any subscription or database-related inquiries. Our support team is available 24/7 to assist you with any concerns you may have."
+    },
+    {
+      question: "We are an aviation authority looking for a database developer. Where can we contact for this?",
+      answer: "For inquiries regarding database development, please reach out to us at info@atplpro.eu. We would be happy to discuss your requirements and explore potential collaborations."
+    },
+    {
+      question: "Can I request a refund for my subscription?",
+      answer: "Unfortunately, once you have subscribed to a service, we are unable to offer refunds for one-time subscriptions. Please ensure you review all terms before making a purchase."
+    },
+    {
+      question: "I am an expert in designing questions and explanations for a specific authority and am looking for opportunities. Where can I contact for this?",
+      answer: "If you are an experienced flight instructor or a retired pilot with a strong aviation theory background and are interested in contributing to our question and explanation development, we’d love to hear from you! Please contact us at careers@atplpro.eu. We are always looking for dedicated professionals to join our team and help enhance our database."
+    }
+  ]
+};
+
+export default {cards, faqs};
+

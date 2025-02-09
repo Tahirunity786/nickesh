@@ -1,0 +1,32 @@
+.outlinenav{
+    border: 2px solid var(--aero-primary);
+    color: black;
+    padding: 7px 16px;
+    border-radius: 500px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+    
+  }
+  .activenav{
+    background-color: var(--aero-primary);
+    color: var(--aero-white);
+    padding: 8px 16px;
+    border-radius: 500px;
+    border: none;
+    border: 2px solid var(--aero-primary);
+  }
+  .outlinenav:hover{
+    background-color: var(--aero-primary);
+    color: white;
+    
+  }
+
+  .collapse-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .show {
+    max-height: 100px;
+  }

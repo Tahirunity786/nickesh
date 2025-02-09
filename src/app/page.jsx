@@ -2,7 +2,8 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import MarqueeCarousel from "@/components/MarqueeCarousel/MarqueeCarousel";
 import UltraMarqueeCarousel from "@/components/Carousal/Carousal";
-import cards from '@/app/icData'
+import data from '@/app/icData'
+import Faqa from "@/components/Faqs/Faqa";
 export default function Home() {
 
 
@@ -151,7 +152,7 @@ export default function Home() {
           <h4 style={{ fontWeight: "bold", marginBottom: "20px" }}>Our Database Contains Following <span style={{ color: "#1A73E8" }}>Countries</span></h4>
           <p>Choose your aviation authority to access region-specific ATPL exam questions and study materials</p>
         </div>
-        <UltraMarqueeCarousel cards={cards} />
+        <UltraMarqueeCarousel cards={data.cards} />
         <div style={{ position: "relative", marginTop: "100px", height: "auto" }} className="text-end">
           <Image
             src={'/Images/11.svg'}
@@ -530,108 +531,8 @@ export default function Home() {
 
         </div>
       </section>
-
-      <section className="container mb-5">
-        <div className="text-center" style={{ position: "relative", marginBottom: "30px" }}>
-          <h4 style={{ fontWeight: "bold" }}>Frequently Asked <span style={{ color: "#1A73E8" }}>Questions</span></h4>
-          <p style={{ fontSize: "14px" }}>Trusted more than +17K customers</p>
-        </div>
-
-        <div className="d-flex justify-content-center align-items-center mb-5">
-          <div className="me-3 ms-3">
-            <button className={styles.activenav}>About</button>
-          </div>
-          <div className="me-3 ms-3">
-            <button className={styles.outlinenav}>Our Services</button>
-          </div>
-          <div className="me-3 ms-3">
-            <button className={styles.outlinenav}>Support</button>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col-lg-6">
-            <Image
-              src={'/Images/background__82221.svg'}
-              width={300}
-              height={300}
-              alt="fqs"
-              className="w-100"
-            />
-          </div>
-          <div className="col-lg-6">
-            <div className="card shadow-sm border border-light rounded-4 mb-3">
-              <div className="card-body d-flex justify-content-start align-items-center">
-                <div className="text-center me-3">
-                  <Image
-                    src={'/Images/plus.svg'}
-                    width={25}
-                    height={25}
-                    alt="users"
-                  />
-                </div>
-                <div>
-
-                  <h6 className="mb-0" style={{ fontWeight: "bold" }}>Are the questions on ATPLPro the same as those in the real EASA exam?</h6>
-
-                </div>
-              </div>
-            </div>
-            <div className="card shadow-sm border border-light rounded-4 mb-3">
-              <div className="card-body d-flex justify-content-start align-items-center">
-                <div className="text-center me-3">
-                  <Image
-                    src={'/Images/plus.svg'}
-                    width={25}
-                    height={25}
-                    alt="users"
-                  />
-                </div>
-                <div>
-
-                  <h6 className="mb-0" style={{ fontWeight: "bold" }}>Which examination database is currently implemented in my country?</h6>
-
-                </div>
-              </div>
-            </div>
-            <div className="card shadow-sm border border-light rounded-4 mb-3">
-              <div className="card-body d-flex justify-content-start align-items-center">
-                <div className="text-center me-3">
-                  <Image
-                    src={'/Images/plus.svg'}
-                    width={25}
-                    height={25}
-                    alt="users"
-                  />
-                </div>
-                <div>
-
-                  <h6 className="mb-0" style={{ fontWeight: "bold" }}>Does ATPLPro help save time in exam preparation?</h6>
-
-                </div>
-              </div>
-            </div>
-            <div className="card shadow-sm border border-light rounded-4 mb-3">
-              <div className="card-body d-flex justify-content-start align-items-center">
-                <div className="text-center me-3">
-                  <Image
-                    src={'/Images/plus.svg'}
-                    width={25}
-                    height={25}
-                    alt="users"
-                  />
-                </div>
-                <div>
-
-                  <h6 className="mb-0" style={{ fontWeight: "bold" }}>How often are new questions added?</h6>
-
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
+<Faqa/>
+      
     </>
   );
 }
