@@ -218,13 +218,32 @@ a.secondary {
   color: #1a1a1a;
   transition: all .3s ease-in-out;
 }
-.btnPrimary:hover{
+
+.btnPrimary:hover {
   background-color: var(--aero-primary-hover);
   color: white;
 }
+
 .btnOutlineprimary:hover {
-background-color: var(--aero-primary);
-color: white;
+  background-color: var(--aero-primary);
+  color: white;
+}
+
+.circleColor {
+  background: linear-gradient(to left, #438BF4, #3CB1F7);
+  /* Example colors */
+}
+
+.bgWave {
+  background-image: url('/Images/wave.png');
+  /* Adjust path if needed */
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  display: block;
+  /* Ensure it takes up space */
 }
 
 /* Enable hover only on non-touch devices */
