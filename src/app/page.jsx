@@ -421,7 +421,7 @@ export default function Home() {
                 style={{ position: "absolute", top: "20px", right: "110px" }}
               />
               <Image
-                src={'/Images/freepik__background__322011.png'}
+                src={'/Images/background__322011.png'}
                 width={492}
                 height={442}
                 alt="pilots"
@@ -510,7 +510,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container">
+      <section className="container mb-5">
         <div className="text-center" style={{ position: "relative", marginBottom: "30px" }}>
           <h4 style={{ fontWeight: "bold" }}>Frequently Asked <span style={{ color: "#1A73E8" }}>Questions</span></h4>
           <p style={{ fontSize: "14px" }}>Trusted more than +17K customers</p>
