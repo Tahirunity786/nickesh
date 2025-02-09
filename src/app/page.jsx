@@ -73,19 +73,19 @@ export default function Home() {
         </div>
 
         <svg className={styles.curveLineleft} width="50%" height="180" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
-          <path d="M 10 110 A 160 80 0 0 1 290 110"
+        <path d="M 10 110 A 160 80 0 0 1 290 110"
             stroke="black"
             fill="transparent"
-            stroke-width="2"
-            stroke-dasharray="5,5"
+            strokeWidth="2"
+            strokeDasharray="5,5"
             transform="translate(0, 40)" />
         </svg>
         <svg className={styles.curveLineRight} width="50%" height="180" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
           <path d="M 10 110 A 160 80 0 0 1 290 110"
             stroke="black"
             fill="transparent"
-            stroke-width="2"
-            stroke-dasharray="5,5"
+            strokeWidth="2"
+            strokeDasharray="5,5"
             transform="translate(0, 40)" />
         </svg>
 
