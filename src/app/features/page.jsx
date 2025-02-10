@@ -106,7 +106,7 @@ const Page = () => {
       </section>
       <section className='container mb-5'>
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-7">
             <div className="mb-4">
 
               <h3 style={{ fontWeight: "bold" }} className='mb-4'>99%  Accurate Question Bank</h3>
@@ -134,8 +134,8 @@ const Page = () => {
             </div>
 
           </div>
-          <div className={`col-lg-6`}>
-            <div className={styles.bgPrimaryRadial}>
+          <div className={`col-lg-5 d-flex justify-content-center`}>
+            <div className={`${styles.bgPrimaryRadial} pb-4`}>
               <div className={styles.circleBig}>
                 <span>99%</span>
               </div>
