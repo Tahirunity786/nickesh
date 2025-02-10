@@ -14,9 +14,13 @@ const Page = () => {
         </div>
         <div className="mb-2 d-flex justify-content-start align-items-center">
           <button className={`${styles.navButtonAeroWarning} ${styles.navBtnAro} me-4`}>Explore Feature</button>
-          <button className={`${styles.navButtonAeroOutlinePrimary} ${styles.navBtnAro}`}>Explore Feature</button>
+          <button className={`${styles.navButtonAeroOutlinePrimary} ${styles.navBtnAro}`}>E Shop</button>
         </div>
       </div>
+    </section>
+
+    <section className='container'>
+
     </section>
 
     </>
