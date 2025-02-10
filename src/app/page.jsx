@@ -315,8 +315,151 @@ export default function Home() {
           </div>
           <div className="col-lg-6">
             <div className="card shadow-sm h-100 border border-light rounded-4 mb-3">
-              <div className="card-body d-flex justify-content-start">
+              <div className="card-body d-flex justify-content-center pt-0 pb-0">
+                <div className="row w-100">
+                  <div className="col-lg-6 ps-0">
+                    <div className="card shadow-sm border border-light rounded-2 mb-3">
+                      <div className="ps-2 pe-2">
 
+                        <Image
+                          src={'/Images/certificate.svg'}
+                          className="card-img-top"
+                          alt="certificate"
+                          width={300}
+                          height={120}
+                        />
+
+                      </div>
+                      <div className="card-body pt-1 pb-1">
+                        <div className="d-flex justify-content-between mb-1">
+                          <div className="d-flex justify-content-start align-items-center">
+                            <div className={`${styles.circleItem} me-2`} style={{ backgroundColor: "wheat", width: "40px", height: "40px" }}>
+                              <Image
+                                src={'/Images/userReal.svg'}
+                                width={40}
+                                height={40}
+                                alt="real user"
+                              />
+                            </div>
+                            <div>
+                              <h6 className="mb-1" style={{ fontWeight: "bold" }}>Yatinder</h6>
+                              <p className="mb-0" style={{ fontSize: "12px" }}>9 days ago</p>
+                            </div>
+                          </div>
+                          <div>
+                            <span className="badge text-bg-primary">Score 10/10</span>
+                          </div>
+                        </div>
+                        <div className="d-flex justify-content-between align-items-center">
+                          <div className="d-flex justify-content-between align-items-center">
+                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
+                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
+                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
+                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
+                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
+                          </div>
+                          <div>
+                            <span className="badge text-bg-primary" style={{ cursor: "pointer" }}>certificate</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card shadow-sm border border-light rounded-2 mb-3">
+                      <div className="ps-2 pe-2">
+
+                        <Image
+                          src={'/Images/certificate.svg'}
+                          className="card-img-top"
+                          alt="certificate"
+                          width={300}
+                          height={120}
+                        />
+
+                      </div>
+                      <div className="card-body pt-1 pb-1">
+                        <div className="d-flex justify-content-between mb-1">
+                          <div className="d-flex justify-content-start align-items-center">
+                            <div className={`${styles.circleItem} me-2`} style={{ backgroundColor: "wheat", width: "40px", height: "40px" }}>
+                              <Image
+                                src={'/Images/userReal.svg'}
+                                width={40}
+                                height={40}
+                                alt="real user"
+                              />
+                            </div>
+                            <div>
+                              <h6 className="mb-1" style={{ fontWeight: "bold" }}>Yatinder</h6>
+                              <p className="mb-0" style={{ fontSize: "12px" }}>9 days ago</p>
+                            </div>
+                          </div>
+                          <div>
+                            <span className="badge text-bg-primary">Score 10/10</span>
+                          </div>
+                        </div>
+                        <div className="d-flex justify-content-between align-items-center">
+                          <div className="d-flex justify-content-between align-items-center">
+                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
+                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
+                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
+                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
+                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
+                          </div>
+                          <div>
+                            <span className="badge text-bg-primary" style={{ cursor: "pointer" }}>certificate</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-6 pe-0">
+                    <div className="card shadow-sm border border-light rounded-2 mb-3">
+                      <div className="ps-2 pe-2">
+
+                        <Image
+                          src={'/Images/certificate.svg'}
+                          className="card-img-top"
+                          alt="certificate"
+                          width={300}
+                          height={120}
+                        />
+
+                      </div>
+                      <div className="card-body pt-1 pb-1">
+                        <div className="d-flex justify-content-between mb-1">
+                          <div className="d-flex justify-content-start align-items-center">
+                            <div className={`${styles.circleItem} me-2`} style={{ backgroundColor: "wheat", width: "40px", height: "40px" }}>
+                              <Image
+                                src={'/Images/userReal.svg'}
+                                width={40}
+                                height={40}
+                                alt="real user"
+                              />
+                            </div>
+                            <div>
+                              <h6 className="mb-1" style={{ fontWeight: "bold" }}>Yatinder</h6>
+                              <p className="mb-0" style={{ fontSize: "12px" }}>9 days ago</p>
+                            </div>
+                          </div>
+                          <div>
+                            <span className="badge text-bg-primary">Score 10/10</span>
+                          </div>
+                        </div>
+                        <div className="d-flex justify-content-between align-items-center">
+                          <div className="d-flex justify-content-between align-items-center">
+                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
+                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
+                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
+                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
+                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
+                          </div>
+                          <div>
+                            <span className="badge text-bg-primary" style={{ cursor: "pointer" }}>certificate</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
