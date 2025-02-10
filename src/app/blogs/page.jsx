@@ -55,7 +55,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="text-center">
+    
           <div className="row g-3">
             <div className="col-4">
               <div className="card w-100 text-start">
@@ -150,7 +150,6 @@ const Page = () => {
               </div>
             </div>
           </div>
-        </div>
       </section>
     </>
   )
