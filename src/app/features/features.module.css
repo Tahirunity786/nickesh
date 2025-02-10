@@ -3,4 +3,40 @@
     height: 248px;
     width: 100%;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--aero-white);
+}
+.navBtnAro{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+
+}
+.navButtonAeroOutlinePrimary{
+    background-color: var(--aero-primary);
+    border: 2px solid var(--aero-white);
+    color: white;
+    padding: 10px 25px;
+    transition: all .2s ease-in-out;
+
+}
+.navButtonAeroWarning {
+    background-color: var(--aero-warning);
+    color: black;
+    padding: 10px 30px;
+    transition: all .3s ease-in-out;
+    border: 2px solid var(--aero-warning);
+}
+
+.navButtonAeroWarning:hover{
+    background-color: var(--aero-warning-hover);
+    border: 2px solid var(--aero-warning-hover);
+}
+.navButtonAeroOutlinePrimary:hover{
+    background-color: var(--aero-white);
+    color: var(--aero-black);
 }

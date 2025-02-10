@@ -9,6 +9,9 @@
   --aero-primary-hover:#4589e1;
   --aero-blue:#29B6F6;
   --aero-white:white;
+  --aero-black:black;
+  --aero-warning:#FFA726;
+  --aero-warning-hover:#ffb340;
 }
 
 @media (prefers-color-scheme: dark) {
