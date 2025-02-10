@@ -6,7 +6,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import styles from './navbar.module.css'
 
-export default function Navbar() {
+export default function Navbar({backGround, logoVariation}) {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
@@ -19,11 +19,11 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="navbar navbar-expand-lg bg-white py-3 pt-0" style={{position:"relative"}}>
+    <nav className={`navbar navbar-expand-lg pt-3 ${backGround ? backGround : 'bg-white'} py-3 pt-0`} style={{position:"relative"}}>
       <div className="container">
         {/* Logo */}
         <Link className="navbar-brand" href="/">
-          <Image src="/Images/logo.svg" alt="Your Company" width={170} height={70} priority />
+          <Image src={logoVariation} alt="Your Company" width={170} height={70} priority />
         </Link>
 
         {/* Mobile Menu Toggle */}

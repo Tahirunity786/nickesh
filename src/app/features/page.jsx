@@ -1,10 +1,12 @@
-import React from 'react'
+import styles from './features.module.css'
+
 
 const Page = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+    <section className={styles.feature0bg}></section>
+
+    </>
   )
 }
 

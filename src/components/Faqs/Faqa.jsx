@@ -100,7 +100,7 @@ const Faqa = () => {
                   transition: 'max-height 0.3s ease-in-out',
                 }}
               >
-                <p className="px-3 py-2">{faq.answer}</p>
+                <p className="px-3 py-2 mb-2 h-100">{faq.answer}</p>
               </div>
             </div>
           ))}
