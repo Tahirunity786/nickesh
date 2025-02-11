@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react';
 import styles from './single-shop.module.css'
-import { useSearchParams } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 
 const Page = () => {
