@@ -1,0 +1,23 @@
+.feature0bg {
+    background-color: var(--aero-primary);
+    height: 248px;
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--aero-white);
+}
+
+
+.itemShop {
+    cursor: pointer;
+    color: var(--aero-white);
+}
+.activeItemShop {
+    background-color: var(--aero-white);
+    color: var(--aero-black);
+    cursor: pointer;
+
+}

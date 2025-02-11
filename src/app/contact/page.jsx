@@ -7,7 +7,7 @@ import styles from './contact.module.css'
 const Page = () => {
   return (
     <>
-    <section className={styles.feature0bg}>
+      <section className={styles.feature0bg}>
         <div className="container">
           <div className="mb-5">
 
@@ -58,10 +58,10 @@ const Page = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-3 mb-3 text-center">
-              <h4 className='mb-4'>Follow Us</h4>
+            <div className="mt-3 ms-4 ps-1 mb-2 text-statr">
+              <h4 className='mb-3'>Follow Us</h4>
 
-              <div className="d-flex justify-content-center align-items-center">
+              <div className="d-flex justify-content-start align-items-center">
                 <div className="me-3">
                   <Image
                     src={'/Images/social/1.svg'}
@@ -118,23 +118,23 @@ const Page = () => {
                   </div>
                   <div className="mb-3">
                     <label htmlFor="message" className="form-label">Message</label>
-                    <textarea className="form-control" id="message" rows="5" style={{resize:"none"}}></textarea>
+                    <textarea className="form-control" id="message" rows="5" style={{ resize: "none" }}></textarea>
                   </div>
                   <div className="mb-3">
-                   <button className='btn btn-primary w-100 d-flex justify-content-center align-items-center'>
-                    <span className='me-2'>
-                    Send
+                    <button className='btn btn-primary w-100 d-flex justify-content-center align-items-center'>
+                      <span className='me-2'>
+                        Send
 
-                    </span>
-                    <span className='mb-2'>
-                      <Image
-                      src={'/Images/paper-plane.svg'}
-                      width={20}
-                      height={20}
-                      alt='icon'
-                      />
-                    </span>
-                   </button>
+                      </span>
+                      <span className='mb-2'>
+                        <Image
+                          src={'/Images/paper-plane.svg'}
+                          width={20}
+                          height={20}
+                          alt='icon'
+                        />
+                      </span>
+                    </button>
                   </div>
 
                 </form>
