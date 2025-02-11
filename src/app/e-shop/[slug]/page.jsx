@@ -2,11 +2,12 @@
 import { useState } from 'react';
 import styles from './single-shop.module.css'
 import { useSearchParams } from 'next/navigation';
-
+import Image from 'next/image';
 
 const Page = () => {
     const searchParams = useSearchParams();
     const source = searchParams.get("source");
+    console.log(source)
     const [activeCategory, setActiveCategory] = useState(`${source ? source : "ATPL"}`);
 
     const options = [
@@ -50,6 +51,324 @@ const Page = () => {
                         ))
                     }
 
+                </div>
+            </section>
+            <section className='container' style={{ marginBottom: "100px" }}>
+                <div className="mb-4 text-start">
+
+                    <h4 style={{ fontSize: "1.3rem", fontWeight: "bold" }}>ATPL-Airline Transport Pilot License</h4>
+                    <p>Choose your preffered subscription option:</p>
+                </div>
+                <div className="row">
+                    <div className="col-lg-6">
+                        <div className="card shadow-sm border border-light rounded-4 mb-3">
+                            <div className="card-body p-0">
+                                <div className='d-flex justify-content-start mb-3 bg-primary rounded-top-4 p-3'>
+
+                                    <div className="text-center mb-2 me-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 31 23" fill="white">
+                                            <path d="M4.25 14.5312L0.6875 10.6406C0.3125 10.2188 0.453125 9.5625 0.921875 9.32812L2.79688 8.34375C3.07812 8.25 3.3125 8.25 3.59375 8.34375L6.96875 10.0781L11.7969 7.59375L4.48438 3C4.10938 2.625 4.20312 1.92188 4.71875 1.6875L7.8125 0.09375C8.09375 0 8.375 0 8.65625 0.1875L18.9219 4.03125L23.5156 1.6875C24.7812 1.03125 26.1406 0.65625 27.5469 0.75C29.1406 0.84375 29.9375 1.35938 30.3125 2.0625C30.6406 2.71875 30.5469 3.70312 29.6562 5.01562C28.9062 6.23438 27.7812 7.125 26.5156 7.78125L12.875 14.6719C12.4531 14.9062 11.9844 15 11.5156 15H5.375C4.95312 15 4.53125 14.8594 4.25 14.5312ZM29 19.5C29.7969 19.5 30.5 20.2031 30.5 21C30.5 21.8438 29.7969 22.5 29 22.5H2C1.15625 22.5 0.5 21.8438 0.5 21C0.5 20.2031 1.15625 19.5 2 19.5H29Z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+
+                                        <h6 style={{ fontWeight: "bold" }}>Complete ATPL Bundle</h6>
+                                        
+
+                                    </div>
+
+                                </div>
+                                <div className="d-flex justify-content-start align-items-center">
+                                    <span className="badge text-bg-secondary me-3">ATPL(A)</span>
+                                    <span className="badge text-bg-secondary">ATPL(H)</span>
+                                </div>
+                                <hr />
+                                <div className="mb-4">
+                                    <div className="d-flex justify-content-start align-items-center mb-2">
+                                        <span className='me-3'>
+                                            <Image
+                                                src={'/Images/circle-check-blue.svg'}
+                                                width={20}
+                                                height={20}
+                                                alt="icon"
+                                            />
+                                        </span>
+                                        <span className='mb-0'>Complete ATPL theory package</span>
+                                    </div>
+                                    <div className="d-flex justify-content-start align-items-center mb-2">
+                                        <span className='me-3'>
+                                            <Image
+                                                src={'/Images/circle-check-blue.svg'}
+                                                width={20}
+                                                height={20}
+                                                alt="icon"
+                                            />
+                                        </span>
+                                        <span className='mb-0'>14 subject areas covered in-depth</span>
+                                    </div>
+                                    <div className="d-flex justify-content-start align-items-center mb-2">
+                                        <span className='me-3'>
+                                            <Image
+                                                src={'/Images/circle-check-blue.svg'}
+                                                width={20}
+                                                height={20}
+                                                alt="icon"
+                                            />
+                                        </span>
+                                        <span className='mb-0'>Regularly updated content</span>
+                                    </div>
+                                    <div className="d-flex justify-content-start align-items-center mb-2">
+                                        <span className='me-3'>
+                                            <Image
+                                                src={'/Images/circle-check-blue.svg'}
+                                                width={20}
+                                                height={20}
+                                                alt="icon"
+                                            />
+                                        </span>
+                                        <span className='mb-0'>Exam-style question bank</span>
+                                    </div>
+                                </div>
+                                <button className='btn btn-primary w-100' onClick={() => { router.push('/e-shop/shop?source=ATPL') }}>Buy now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right ms-2" viewBox="0 0 16 16">
+                                    <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <div className="card shadow-sm border border-light rounded-4 mb-3">
+                            <div className="card-body ">
+                                <div className='d-flex justify-content-start mb-3'>
+
+                                    <div className="text-center mb-2 me-3">
+                                        <Image
+                                            src={'/Images/plane-flying.svg'}
+                                            width={25}
+                                            height={25}
+                                            alt="icon"
+                                        />
+                                    </div>
+                                    <div>
+
+                                        <h6 style={{ fontWeight: "bold" }}>ATPL Database</h6>
+                                        <p className="mb-0">Comprehensive resources for airline transport pilots</p>
+
+                                    </div>
+
+                                </div>
+                                <div className="d-flex justify-content-start align-items-center">
+                                    <span className="badge text-bg-secondary me-3">ATPL(A)</span>
+                                    <span className="badge text-bg-secondary">ATPL(H)</span>
+                                </div>
+                                <hr />
+                                <div className="mb-4">
+                                    <div className="d-flex justify-content-start align-items-center mb-2">
+                                        <span className='me-3'>
+                                            <Image
+                                                src={'/Images/circle-check-blue.svg'}
+                                                width={20}
+                                                height={20}
+                                                alt="icon"
+                                            />
+                                        </span>
+                                        <span className='mb-0'>Complete ATPL theory package</span>
+                                    </div>
+                                    <div className="d-flex justify-content-start align-items-center mb-2">
+                                        <span className='me-3'>
+                                            <Image
+                                                src={'/Images/circle-check-blue.svg'}
+                                                width={20}
+                                                height={20}
+                                                alt="icon"
+                                            />
+                                        </span>
+                                        <span className='mb-0'>14 subject areas covered in-depth</span>
+                                    </div>
+                                    <div className="d-flex justify-content-start align-items-center mb-2">
+                                        <span className='me-3'>
+                                            <Image
+                                                src={'/Images/circle-check-blue.svg'}
+                                                width={20}
+                                                height={20}
+                                                alt="icon"
+                                            />
+                                        </span>
+                                        <span className='mb-0'>Regularly updated content</span>
+                                    </div>
+                                    <div className="d-flex justify-content-start align-items-center mb-2">
+                                        <span className='me-3'>
+                                            <Image
+                                                src={'/Images/circle-check-blue.svg'}
+                                                width={20}
+                                                height={20}
+                                                alt="icon"
+                                            />
+                                        </span>
+                                        <span className='mb-0'>Exam-style question bank</span>
+                                    </div>
+                                </div>
+                                <button className='btn btn-primary w-100' onClick={() => { router.push('/e-shop/shop?source=PPL') }}>Buy now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right ms-2" viewBox="0 0 16 16">
+                                    <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <div className="card shadow-sm border border-light rounded-4 mb-3">
+                            <div className="card-body ">
+                                <div className='d-flex justify-content-start mb-3'>
+
+                                    <div className="text-center mb-2 me-3">
+                                        <Image
+                                            src={'/Images/plane-flying.svg'}
+                                            width={25}
+                                            height={25}
+                                            alt="icon"
+                                        />
+                                    </div>
+                                    <div>
+
+                                        <h6 style={{ fontWeight: "bold" }}>ATPL Database</h6>
+                                        <p className="mb-0">Comprehensive resources for airline transport pilots</p>
+
+                                    </div>
+
+                                </div>
+                                <div className="d-flex justify-content-start align-items-center">
+                                    <span className="badge text-bg-secondary me-3">ATPL(A)</span>
+                                    <span className="badge text-bg-secondary">ATPL(H)</span>
+                                </div>
+                                <hr />
+                                <div className="mb-4">
+                                    <div className="d-flex justify-content-start align-items-center mb-2">
+                                        <span className='me-3'>
+                                            <Image
+                                                src={'/Images/circle-check-blue.svg'}
+                                                width={20}
+                                                height={20}
+                                                alt="icon"
+                                            />
+                                        </span>
+                                        <span className='mb-0'>Complete ATPL theory package</span>
+                                    </div>
+                                    <div className="d-flex justify-content-start align-items-center mb-2">
+                                        <span className='me-3'>
+                                            <Image
+                                                src={'/Images/circle-check-blue.svg'}
+                                                width={20}
+                                                height={20}
+                                                alt="icon"
+                                            />
+                                        </span>
+                                        <span className='mb-0'>14 subject areas covered in-depth</span>
+                                    </div>
+                                    <div className="d-flex justify-content-start align-items-center mb-2">
+                                        <span className='me-3'>
+                                            <Image
+                                                src={'/Images/circle-check-blue.svg'}
+                                                width={20}
+                                                height={20}
+                                                alt="icon"
+                                            />
+                                        </span>
+                                        <span className='mb-0'>Regularly updated content</span>
+                                    </div>
+                                    <div className="d-flex justify-content-start align-items-center mb-2">
+                                        <span className='me-3'>
+                                            <Image
+                                                src={'/Images/circle-check-blue.svg'}
+                                                width={20}
+                                                height={20}
+                                                alt="icon"
+                                            />
+                                        </span>
+                                        <span className='mb-0'>Exam-style question bank</span>
+                                    </div>
+                                </div>
+                                <button className='btn btn-primary w-100' onClick={() => { router.push('/e-shop/shop?source=DRONE') }}>Buy now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right ms-2" viewBox="0 0 16 16">
+                                    <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <div className="card shadow-sm border border-light rounded-4 mb-3">
+                            <div className="card-body ">
+                                <div className='d-flex justify-content-start mb-3'>
+
+                                    <div className="text-center mb-2 me-3">
+                                        <Image
+                                            src={'/Images/plane-flying.svg'}
+                                            width={25}
+                                            height={25}
+                                            alt="icon"
+                                        />
+                                    </div>
+                                    <div>
+
+                                        <h6 style={{ fontWeight: "bold" }}>ATPL Database</h6>
+                                        <p className="mb-0">Comprehensive resources for airline transport pilots</p>
+
+                                    </div>
+
+                                </div>
+                                <div className="d-flex justify-content-start align-items-center">
+                                    <span className="badge text-bg-secondary me-3">ATPL(A)</span>
+                                    <span className="badge text-bg-secondary">ATPL(H)</span>
+                                </div>
+                                <hr />
+                                <div className="mb-4">
+                                    <div className="d-flex justify-content-start align-items-center mb-2">
+                                        <span className='me-3'>
+                                            <Image
+                                                src={'/Images/circle-check-blue.svg'}
+                                                width={20}
+                                                height={20}
+                                                alt="icon"
+                                            />
+                                        </span>
+                                        <span className='mb-0'>Complete ATPL theory package</span>
+                                    </div>
+                                    <div className="d-flex justify-content-start align-items-center mb-2">
+                                        <span className='me-3'>
+                                            <Image
+                                                src={'/Images/circle-check-blue.svg'}
+                                                width={20}
+                                                height={20}
+                                                alt="icon"
+                                            />
+                                        </span>
+                                        <span className='mb-0'>14 subject areas covered in-depth</span>
+                                    </div>
+                                    <div className="d-flex justify-content-start align-items-center mb-2">
+                                        <span className='me-3'>
+                                            <Image
+                                                src={'/Images/circle-check-blue.svg'}
+                                                width={20}
+                                                height={20}
+                                                alt="icon"
+                                            />
+                                        </span>
+                                        <span className='mb-0'>Regularly updated content</span>
+                                    </div>
+                                    <div className="d-flex justify-content-start align-items-center mb-2">
+                                        <span className='me-3'>
+                                            <Image
+                                                src={'/Images/circle-check-blue.svg'}
+                                                width={20}
+                                                height={20}
+                                                alt="icon"
+                                            />
+                                        </span>
+                                        <span className='mb-0'>Exam-style question bank</span>
+                                    </div>
+                                </div>
+                                <button className='btn btn-primary w-100' onClick={() => { router.push('/e-shop/shop?source=BALLON') }}>Buy now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right ms-2" viewBox="0 0 16 16">
+                                    <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>
