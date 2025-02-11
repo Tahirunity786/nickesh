@@ -431,22 +431,58 @@ const Page = () => {
                 </div>
             </section>
             <section className='container'>
-                <h4 style={{ fontSize: "1.3rem", fontWeight: "bold", marginBottom:"30px" }}>Trusted by Aviation Professionals Worldwide</h4>
+                <h4 style={{ fontSize: "1.3rem", fontWeight: "bold", marginBottom: "30px" }}>Trusted by Aviation Professionals Worldwide</h4>
 
                 <div className='d-flex justify-content-start mb-3'>
 
-                    <div className="text-center mb-2 me-3">
+                    <div className={`${styles.circleItem} me-4`} style={{ backgroundColor: "#D6E5FB" }}>
                         <Image
-                            src={'/Images/plane-flying.svg'}
-                            width={25}
-                            height={25}
+                            src={'/Images/users.svg'}
+                            width={30}
+                            height={30}
                             alt="icon"
                         />
                     </div>
                     <div>
 
-                        <h6 style={{ fontWeight: "bold" }}>ATPL Database</h6>
-                        <p className="mb-0">Comprehensive resources for airline transport pilots</p>
+                        <h6 style={{ fontWeight: "bold" }}>17K+</h6>
+                        <p className="mb-0">Active student</p>
+
+                    </div>
+
+                </div>
+                <div className='d-flex justify-content-start mb-3'>
+
+                    <div className={`${styles.circleItem} me-4`} style={{ backgroundColor: "#D6E5FB" }}>
+                        <Image
+                            src={'/Images/globe-feature.svg'}
+                            width={30}
+                            height={30}
+                            alt="icon"
+                        />
+                    </div>
+                    <div>
+
+                        <h6 style={{ fontWeight: "bold" }}>190+ Countries</h6>
+                        <p className="mb-0">Global Reach</p>
+
+                    </div>
+
+                </div>
+                <div className='d-flex justify-content-start mb-3'>
+
+                    <div className={`${styles.circleItem} me-4`} style={{ backgroundColor: "#D6E5FB" }}>
+                        <Image
+                            src={'/Images/signal.svg'}
+                            width={30}
+                            height={30}
+                            alt="icon"
+                        />
+                    </div>
+                    <div>
+
+                        <h6 style={{ fontWeight: "bold" }}>98%</h6>
+                        <p className="mb-0">Customer Satisfaction</p>
 
                     </div>
 
