@@ -3,10 +3,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import styles from './navbar.module.css'
 
+
+
 export default function Navbar({backGround, logoVariation}) {
+  const router = useRouter()
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
@@ -49,7 +52,7 @@ export default function Navbar({backGround, logoVariation}) {
 
           {/* Buttons */}
           <div className="d-flex gap-3">
-            <button type="button" className={`${styles.navButtonAeroWarning} ${styles.navBtnAro}`} >E-Shop</button>
+            <button type="button" className={`${styles.navButtonAeroWarning} ${styles.navBtnAro}`} onClick={()=>{router.push('/e-shop')}} >E-Shop</button>
             <button type="button" className={`${styles.navButtonAeroPrimary} ${styles.navBtnAro}`}>Sign In</button>
           </div>
         {/* <div className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`} style={{position:"relative"}}> */}

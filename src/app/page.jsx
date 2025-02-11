@@ -555,8 +555,6 @@ export default function Home() {
                       <h6 style={{ fontWeight: "bold" }}>Innovation Features</h6>
                       <p style={{ fontSize: "14px" }}>Dynamic Quality Score: Focus on high-probability questions based on recent exams.</p>
                     </div>
-
-
                   </div>
                 </div>
               </div>
