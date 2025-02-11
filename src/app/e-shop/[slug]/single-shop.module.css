@@ -21,3 +21,11 @@
     cursor: pointer;
 
 }
+.tagPrimary{
+    background-color: #1a73e8b3;
+    color: white;
+    padding: 6px 10px;
+    margin-right: 10px;
+    font-size: small;
+    border-radius: 5px;
+}
