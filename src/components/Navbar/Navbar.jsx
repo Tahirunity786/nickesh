@@ -8,7 +8,7 @@ import styles from './navbar.module.css'
 
 
 
-export default function Navbar({backGround, logoVariation}) {
+export default function Navbar({backGround, logoVariation, buttonSignUp}) {
   const router = useRouter()
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -22,24 +22,25 @@ export default function Navbar({backGround, logoVariation}) {
   ];
 
   return (
-    <nav className={`navbar navbar-expand-lg pt-3 ${backGround ? backGround : 'bg-white'} py-3 pt-0`} style={{position:"relative"}}>
+    <nav className={`navbar navbar-expand-lg ${backGround ? backGround : 'bg-white'} py-3 pt-1`} style={{position:"relative"}}>
       <div className="container">
         {/* Logo */}
         <Link className="navbar-brand" href="/">
-          <Image src={logoVariation} alt="Your Company" width={170} height={70} priority />
+          <Image src={logoVariation} alt="ATPL PRO" width={170} height={70} priority />
         </Link>
 
         {/* Mobile Menu Toggle */}
-        <button 
+        {/* <button 
           className="navbar-toggler" 
           type="button" 
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
-        </button>
+        </button> */}
 
         {/* Navbar Items */}
+        
           <ul className={`navbar-nav mx-auto ${styles.navigation}`}>
             {navItems.map(({ name, path }) => (
               <li className="nav-item" key={path}>
@@ -53,7 +54,7 @@ export default function Navbar({backGround, logoVariation}) {
           {/* Buttons */}
           <div className="d-flex gap-3">
             <button type="button" className={`${styles.navButtonAeroWarning} ${styles.navBtnAro}`} onClick={()=>{router.push('/e-shop')}} >E-Shop</button>
-            <button type="button" className={`${styles.navButtonAeroPrimary} ${styles.navBtnAro}`}>Sign In</button>
+            <button type="button" className={`${styles.navButtonAeroPrimary} ${styles.navBtnAro}`} style={{backgroundColor:`${buttonSignUp}`}}>Sign In</button>
           </div>
         {/* <div className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`} style={{position:"relative"}}> */}
         {/* </div> */}

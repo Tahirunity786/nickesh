@@ -16,10 +16,11 @@ export default function ConditionalWrapper({ children }) {
   // Determine Navbar background color
   const navbarBgClass = pathname === "/" ? "bg-white" : styles.primaryNavbar;
   const logoVariation = pathname === "/" ? "/Images/logo.svg" : '/Images/logo2.svg';
+  const buttonSignUp = pathname === "/" ? "#1A73E8" : "rgb(102 164 245)";
 
   return (
     <>
-      {showNavbar && <Navbar backGround={navbarBgClass} logoVariation={logoVariation} />} {/* Navbar always shows except on 404 */}
+      {showNavbar && <Navbar backGround={navbarBgClass} logoVariation={logoVariation} buttonSignUp={buttonSignUp} />} {/* Navbar always shows except on 404 */}
       <main className="w-100">{children}</main>
       {showFooter && <Footer />} {/* Footer always shows except on 404 */}
     </>
