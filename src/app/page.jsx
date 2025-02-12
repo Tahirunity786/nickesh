@@ -24,7 +24,7 @@ export default function Home() {
             </button>
 
           </div>
-          <div className="col-lg-5" style={{ position: "relative" }}>
+          <div className="col-lg-5 pRelative">
             <div className={`${styles.flowtingDiv} ${styles.float}`}>
               <div className={`${styles.circleItem}`} style={{ backgroundColor: "#12BB6A" }}>
                 <Image
@@ -68,7 +68,7 @@ export default function Home() {
 
       </section>
       <MarqueeCarousel />
-      <section className="container" style={{ marginTop: "50px", marginBottom: "50px", height: "auto", position: "relative" }}>
+      <section className="container pRelative" style={{ marginTop: "50px", marginBottom: "50px", height: "auto" }}>
         <div className="text-center mb-4">
           <h4 style={{ fontWeight: "bold", marginBottom: "70px" }}>Your Path To ATPL Success</h4>
         </div>
@@ -94,7 +94,7 @@ export default function Home() {
 
 
         <div className="row">
-          <div className="col-lg-4 p-3" style={{ position: "relative" }}>
+          <div className="col-lg-4 p-3 pRelative">
             <div className={`${styles.circleItem}`} style={{ backgroundColor: "#1A73E8", position: "absolute", zIndex: "100", top: "-20px", left: "44%", right: "44%" }}>
               <Image
                 src={'/Images/plane-tilt.svg'}
@@ -111,7 +111,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 p-3" style={{ position: "relative", top: "50px" }}>
+          <div className="col-lg-4 p-3 pRelative" style={{ top: "50px" }}>
             <div className={`${styles.circleItem}`} style={{ backgroundColor: "#FFA726", position: "absolute", zIndex: "100", top: "-20px", left: "44%", right: "44%" }}>
               <Image
                 src={'/Images/icon3.svg'}
@@ -128,7 +128,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 p-3" style={{ position: "relative" }}>
+          <div className="col-lg-4 p-3 pRelative">
             <div className={`${styles.circleItem}`} style={{ backgroundColor: "#12BB6A", position: "absolute", zIndex: "100", top: "-20px", left: "44%", right: "44%" }}>
               <Image
                 src={'/Images/chart-pie.svg'}
@@ -153,7 +153,7 @@ export default function Home() {
           <p>Choose your aviation authority to access region-specific ATPL exam questions and study materials</p>
         </div>
         <UltraMarqueeCarousel cards={data.cards} />
-        <div style={{ position: "relative", marginTop: "100px", height: "auto" }} className="text-end">
+        <div className="pRelative text-end" style={{ marginTop: "100px", height: "auto" }}>
           <Image
             src={'/Images/11.svg'}
             width={132}
@@ -465,15 +465,16 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="container" style={{ marginBottom: "50px" }}>
-        <div className="text-center" style={{ position: "relative", marginBottom: "50px" }}>
-          <h4 style={{ fontWeight: "bold", marginBottom: "50px" }}>Why ATPL <span style={{ color: "#1A73E8" }}>Pro?</span></h4>
+      <section className="container mb-50">
+        <div className="text-center pRelative mb-50">
+          <h4 className="mb-50 fw-bold">Why ATPL <span style={{ color: "#1A73E8" }}>Pro?</span></h4>
           <Image
             src={'/Images/double-lines.svg'}
             width={178}
             height={58}
             alt="lines"
-            style={{ position: "absolute", top: "12px", right: "38%", zIndex: "100" }}
+            className="pAbsolute"
+            style={{top: "12px", right: "38%", zIndex: "100" }}
           />
           <p>ATPL Pro empowers aspiring pilots and aviation professionals with top-quality tools and resources, serving students, flight schools, <br /> and aviation authorities worldwide.</p>
         </div>
@@ -492,7 +493,7 @@ export default function Home() {
                       />
                     </div>
                     <div className="text-center">
-                      <h6 style={{ fontWeight: "bold" }}>Trusted by Aviation Experts</h6>
+                      <h6 className="fw-bold">Trusted by Aviation Experts</h6>
                       <p style={{ fontSize: "14px" }}>Our platform is developed in collaboration with experienced airline captains, ATPL instructors, and industry professionals, ensuring practical and reliable knowledge transfer.</p>
                     </div>
 
@@ -512,7 +513,7 @@ export default function Home() {
                       />
                     </div>
                     <div className="text-center">
-                      <h6 style={{ fontWeight: "bold" }}>Global Reach</h6>
+                      <h6 className="fw-bold">Global Reach</h6>
                       <p style={{ fontSize: "14px" }}>From EASA-compliant exams in Europe to ICAO-compliant solutions for global users, we are the go-to resource for pilots worldwide.</p>
                     </div>
                   </div>
@@ -532,11 +533,9 @@ export default function Home() {
                       />
                     </div>
                     <div className="text-center">
-                      <h6 style={{ fontWeight: "bold" }}>Support for Flight Schools and Aviation Authorities</h6>
+                      <h6 className="fw-bold">Support for Flight Schools and Aviation Authorities</h6>
                       <p style={{ fontSize: "14px" }}>Our platform is developed in collaboration with experienced airline captains, ATPL instructors, and industry professionals, ensuring practical and reliable knowledge transfer.</p>
                     </div>
-
-
                   </div>
                 </div>
               </div>
@@ -552,7 +551,7 @@ export default function Home() {
                       />
                     </div>
                     <div className="text-center">
-                      <h6 style={{ fontWeight: "bold" }}>Innovation Features</h6>
+                      <h6 className="fw-bold">Innovation Features</h6>
                       <p style={{ fontSize: "14px" }}>Dynamic Quality Score: Focus on high-probability questions based on recent exams.</p>
                     </div>
                   </div>
@@ -561,34 +560,37 @@ export default function Home() {
             </div>
           </div>
           <div className="col-lg-5">
-            <div className="d-flex align-items-end h-100 w-100" style={{ position: "relative" }}>
+            <div className="d-flex align-items-end h-100 w-100 pRelative" >
               <Image
                 src={'/Images/border-circle2.svg'}
                 width={50}
                 height={50}
                 alt="circle"
-                style={{ position: "absolute", top: "100px" }}
+                className="pAbsolute"
+                style={{top: "100px" }}
               />
               <Image
                 src={'/Images/border-circle1.svg'}
                 width={100}
                 height={100}
                 alt="circle"
-                style={{ position: "absolute", top: "0px", right: "80px" }}
+                className="pAbsolute"
+                style={{top: "0px", right: "80px" }}
               />
               <Image
                 src={'/Images/aero-plain.svg'}
                 width={100}
                 height={100}
                 alt="circle"
-                style={{ position: "absolute", top: "20px", right: "110px" }}
+                className="pAbsolute"
+                style={{top: "20px", right: "110px" }}
               />
               <Image
                 src={'/Images/background__322011.png'}
                 width={492}
                 height={442}
                 alt="pilots"
-                style={{ marginTop: "100px" }}
+                className="mt-100"
               />
             </div>
           </div>

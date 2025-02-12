@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from './purchase.module.css'
+import styles from './thanyou.module.css'
 
 const Page = () => {
     return (
@@ -8,8 +8,8 @@ const Page = () => {
                 <div className="container">
                     <div className="mb-5 text-center">
 
-                        <h2 style={{ fontSize: "2rem", fontWeight: "bold" }}>Complete Your Purchase</h2>
-                        <p style={{ fontWeight: "bold" }}>You’re just one step away from accessing premium aviation training materials</p>
+                        <h2 style={{ fontSize: "2rem", fontWeight: "bold" }}>Thank You for Your Purchase!</h2>
+                        <p style={{ fontWeight: "bold" }}>Your  order has been confirmed and you have access to your course materials.</p>
 
                     </div>
 
@@ -18,39 +18,84 @@ const Page = () => {
             <section className='container d-flex justify-content-center' style={{ marginBottom: "100px" }}>
 
                 <div className="row w-100">
+                    <div className="col-lg-12 text-center p-3 mb-2 rounded-2 border">
+                        <Image
+                            src={'/Images/Circle-check-green.svg'}
+                            width={35}
+                            height={35}
+                            alt='Icon'
+                            className='mb-3'
+                        />
+                        <div className="mb-5">
+                            <h4 style={{ fontSize: "1.4rem", fontWeight: "bold" }}>Complete Your Purchase</h4>
+                            <p>Order Number: <span> ORD-12345</span></p>
+                            <p>Item: <span> ATPL Air Law</span></p>
+                            <p>Amount paid: <span>   £256</span></p>
+
+                        </div>
+                    </div>
                     <div className="col-lg-5">
                         <div className="border p-3 rounded-3">
-                            <h5 style={{ fontWeight: "bold" }} className='mb-4'>Order Summary</h5>
-                            <div className="d-flex justify-content-between align-items-center mb-3">
-                                <p className='mb-0 fw-bold'>ATPL Air Law</p>
-                                <p className='mb-0 fw-bold'>£245</p>
-                            </div>
-                            <div className="d-flex justify-content-between align-items-center mb-3">
-                                <p className='mb-0 fw-bold opacity-50'>Duration</p>
-                                <p className='mb-0 fw-bold opacity-50'>12 months</p>
-                            </div>
-                            <div className="d-flex justify-content-between align-items-center mb-3">
-                                <p className='mb-0 fw-bold'>Tax</p>
-                                <p className='mb-0 fw-bold'>£22.90</p>
-                            </div>
-                            <hr />
-                            <div className="row mb-3">
-                                <div className="col-lg-8 mb-2 pe-0">
-                                    <input type="text" className={`w-100 ${styles.inputCoupon}`} placeholder='Enter Coupon Code' />
+                            <h5 style={{ fontWeight: "bold" }} className='mb-4'>Access Your Dashboard</h5>
+                            <p>You can now access your course materials through our learning dashboard.</p>
+
+                            <button className={`w-100 mb-3 rounded-3 ${styles.couponButton}`}>Submit</button>
+                            <p>You can also access your dashboard at any time by clicking on your profile icon and selecting the dashboard option.</p>
+
+
+                            <div className="d-flex justify-content-start align-items-center mb-3">
+                                <div className='mb-0 fw-bold'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-person-fill" viewBox="0 0 16 16">
+                                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
                                 </div>
-                                <div className="col-lg-4 mb-2 ps-0">
-                                    <button className={`w-100 ${styles.couponButton}`}>Submit</button>
+                                <div className='mb-0 ms-3 '>
+
+                                    Dashboard
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right ms-3" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                    </svg>
                                 </div>
-                            </div>
-                            <div className="d-flex justify-content-between align-items-center mb-3">
-                                <p className='mb-0 fw-bold'>Total</p>
-                                <p className='mb-0 fw-bold text-primary'>£251.90</p>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-7">
                         <div className="border p-3 rounded-3">
-                            <h5 style={{ fontWeight: "bold" }} className='mb-4'>Payment Details</h5>
+                            <h5 style={{ fontWeight: "bold" }} className='mb-4'>Check your Email</h5>
+                            <p>We’ve sent you an email with important Information</p>
+                            <div className="ps-4">
+
+
+                                <div className="d-flex justify-content-start align-items-center mb-2">
+                                    <span className='me-3'>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">
+                                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                                        </svg>
+                                    </span>
+                                    <span className='mb-0' style={{ fontSize: "14px" }}>Detailed receipt of your purchase</span>
+                                </div>
+                                <div className="d-flex justify-content-start align-items-center mb-2">
+                                    <span className='me-3'>
+                                        <Image
+                                            src={'/Images/book.svg'}
+                                            width={16}
+                                            height={16}
+                                            alt="icon"
+                                        />
+                                    </span>
+                                    <span className='mb-0' style={{ fontSize: "14px" }}>Instructions on how to access your course materials</span>
+                                </div>
+
+                                <div className="d-flex justify-content-start align-items-center mb-2">
+                                    <span className='me-3'>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                        </svg>
+                                    </span>
+                                    <span className='mb-0' style={{ fontSize: "14px" }}>A direct link to your learning dashboard</span>
+                                </div>
+                            </div>
+                            <p>If you don’t see the email, please check your spam folder.</p>
                         </div>
                     </div>
                 </div>
@@ -367,212 +412,11 @@ const Page = () => {
                 </div>
             </section>
 
-            <section className='container' style={{ marginBottom: "100px" }}>
-                <div className="mb-5 text-center">
-                    <h4 style={{ fontSize: "1.4rem", fontWeight: "bold" }}> What Our Students Say</h4>
-                </div>
-                <div className="d-flex justify-content-center">
-
-
-                    <div className="row w-75">
-                        <div className="col-4">
-                            <div className="card shadow-sm border border-light rounded-2 mb-3">
-                                <div className="card-body">
-                                    <div className={`d-flex justify-content-start align-items-center mb-3`} >
-                                        <span className='me-1'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" className="bi bi-star" viewBox="0 0 16 16">
-                                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                                            </svg>
-                                        </span>
-                                        <span className='me-1'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" className="bi bi-star" viewBox="0 0 16 16">
-                                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                                            </svg>
-                                        </span>
-                                        <span className='me-1'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" className="bi bi-star" viewBox="0 0 16 16">
-                                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                                            </svg>
-                                        </span>
-                                        <span className='me-1'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" className="bi bi-star" viewBox="0 0 16 16">
-                                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                                            </svg>
-                                        </span>
-                                        <span className='me-1'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" className="bi bi-star" viewBox="0 0 16 16">
-                                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                                            </svg>
-                                        </span>
-                                    </div>
-                                    <div className=" mb-3">
-                                        <p style={{ fontSize: "14px" }}>“The ATPL materials were crucial for my exam success.”</p>
-                                        <h6 style={{ fontWeight: "bold" }}>Sarah L.</h6>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-4">
-                            <div className="card shadow-sm border border-light rounded-2 mb-3">
-                                <div className="card-body">
-                                    <div className={`d-flex justify-content-start align-items-center mb-3`} >
-                                        <span className='me-1'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" className="bi bi-star" viewBox="0 0 16 16">
-                                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                                            </svg>
-                                        </span>
-                                        <span className='me-1'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" className="bi bi-star" viewBox="0 0 16 16">
-                                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                                            </svg>
-                                        </span>
-                                        <span className='me-1'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" className="bi bi-star" viewBox="0 0 16 16">
-                                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                                            </svg>
-                                        </span>
-                                        <span className='me-1'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" className="bi bi-star" viewBox="0 0 16 16">
-                                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                                            </svg>
-                                        </span>
-                                        <span className='me-1'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" className="bi bi-star" viewBox="0 0 16 16">
-                                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                                            </svg>
-                                        </span>
-                                    </div>
-                                    <div className=" mb-3">
-                                        <p style={{ fontSize: "14px" }}>“The ATPL materials were crucial for my exam success.”</p>
-                                        <h6 style={{ fontWeight: "bold" }}>Sarah L.</h6>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-4">
-                            <div className="card shadow-sm border border-light rounded-2 mb-3">
-                                <div className="card-body">
-                                    <div className={`d-flex justify-content-start align-items-center mb-3`} >
-                                        <span className='me-1'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" className="bi bi-star" viewBox="0 0 16 16">
-                                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                                            </svg>
-                                        </span>
-                                        <span className='me-1'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" className="bi bi-star" viewBox="0 0 16 16">
-                                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                                            </svg>
-                                        </span>
-                                        <span className='me-1'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" className="bi bi-star" viewBox="0 0 16 16">
-                                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                                            </svg>
-                                        </span>
-                                        <span className='me-1'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" className="bi bi-star" viewBox="0 0 16 16">
-                                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                                            </svg>
-                                        </span>
-                                        <span className='me-1'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" className="bi bi-star" viewBox="0 0 16 16">
-                                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
-                                            </svg>
-                                        </span>
-                                    </div>
-                                    <div className=" mb-3">
-                                        <p style={{ fontSize: "14px" }}>“The ATPL materials were crucial for my exam success.”</p>
-                                        <h6 style={{ fontWeight: "bold" }}>Sarah L.</h6>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            <section className='container' style={{ marginBottom: "100px" }}>
-                <div className="mb-5 text-center">
-                    <h4 style={{ fontSize: "1.4rem", fontWeight: "bold" }}> What You’ll Get</h4>
-                </div>
-                <div className="d-flex justify-content-center">
-
-
-                    <div className="row">
-                        <div className="col-4">
-                            <div className="card shadow-sm border border-light rounded-4 mb-3">
-                                <div className="card-body d-flex justify-content-start">
-                                    <div className="text-center mb-2 me-3">
-                                        <Image
-                                            src={'/Images/circle-check-blue.svg'}
-                                            width={25}
-                                            height={25}
-                                            alt="icon"
-                                        />
-                                    </div>
-                                    <div>
-
-                                        <h6 style={{ fontWeight: "bold" }}>Instant Access</h6>
-                                        <p className="mb-0">Access to wide range of subjects tailored for different aviation paths.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-4">
-                            <div className="card shadow-sm border border-light rounded-4 mb-3">
-                                <div className="card-body d-flex justify-content-start">
-                                    <div className="text-center mb-2 me-3">
-                                        <Image
-                                            src={'/Images/circle-check-blue.svg'}
-                                            width={25}
-                                            height={25}
-                                            alt="icon"
-                                        />
-                                    </div>
-                                    <div>
-
-                                        <h6 style={{ fontWeight: "bold" }}>Secure Payment</h6>
-                                        <p className="mb-0">Choose your subscription duration and learn at your own pace</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-4">
-                            <div className="card shadow-sm border border-light rounded-4 mb-3">
-                                <div className="card-body d-flex justify-content-start">
-                                    <div className="text-center mb-2 me-3">
-                                        <Image
-                                            src={'/Images/circle-check-blue.svg'}
-                                            width={25}
-                                            height={25}
-                                            alt="icon"
-                                        />
-                                    </div>
-                                    <div>
-
-                                        <h6 style={{ fontWeight: "bold" }}>Continuous Updates</h6>
-                                        <p className="mb-0">Content developed by experienced aviation professionals and instructors.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            <section className='bg-primary p-3 pt-4 pb-4 text-center text-light'>
-                <h4 style={{ fontSize: "1.4rem", fontWeight: "bold" }}>Need Help?</h4>
-                <p>Join Thousands of  sucessful pilots who trusted  ATPL Pro</p>
-                <button className='btn btn-light text-primary fw-bold'>
-                    connect Support
+            <section className='p-3 pt-4 pb-4 text-center '>
+                <h4 style={{ fontSize: "1.4rem", fontWeight: "bold" }}>How Did We Do?</h4>
+                <p>Your feedback helps us improve our services. We’d love to hear your purchase experience</p>
+                <button className='btn btn-primary  fw-bold'>
+                    Give Feedback
                 </button>
             </section>
         </>
