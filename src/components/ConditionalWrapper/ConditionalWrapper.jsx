@@ -3,26 +3,41 @@
 import { usePathname } from "next/navigation";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import styles from './conditional.module.css'
+import styles from './conditional.module.css';
 
 export default function ConditionalWrapper({ children }) {
   const pathname = usePathname();
-  const hideNavbarRoutes = ["/404"]; // Hide navbar only on 404
-  const hideFooterRoutes = ["/404"]; // Hide footer only on 404
 
+  // Routes where Navbar and Footer should be hidden
+  const hideNavbarRoutes = ["/404", "/login", "/register"];
+  const hideFooterRoutes = ["/404", "/login", "/register"];
+
+  // Determine visibility
   const showNavbar = !hideNavbarRoutes.includes(pathname);
   const showFooter = !hideFooterRoutes.includes(pathname);
 
-  // Determine Navbar background color
-  const navbarBgClass = pathname === "/" ? "bg-white" : styles.primaryNavbar;
-  const logoVariation = pathname === "/" ? "/Images/logo.svg" : '/Images/logo2.svg';
-  const buttonSignUp = pathname === "/" ? "#1A73E8" : "rgb(102 164 245)";
+  // Navbar background and variations based on the route
+  const isHomePage = pathname === "/";
+  const navbarBgClass = isHomePage ? "bg-white" : styles.primaryNavbar;
+  const logoVariation = isHomePage ? "/Images/logo.svg" : "/Images/logo2.svg";
+  const buttonSignUpColor = isHomePage ? "#1A73E8" : "rgb(102, 164, 245)";
 
   return (
     <>
-      {showNavbar && <Navbar backGround={navbarBgClass} logoVariation={logoVariation} buttonSignUp={buttonSignUp} />} {/* Navbar always shows except on 404 */}
+      {/* Conditional Navbar Rendering */}
+      {showNavbar && (
+        <Navbar
+          backGround={navbarBgClass}
+          logoVariation={logoVariation}
+          buttonSignUp={buttonSignUpColor}
+        />
+      )}
+      
+      {/* Main Content */}
       <main className="w-100">{children}</main>
-      {showFooter && <Footer />} {/* Footer always shows except on 404 */}
+      
+      {/* Conditional Footer Rendering */}
+      {showFooter && <Footer />}
     </>
   );
 }

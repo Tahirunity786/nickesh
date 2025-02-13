@@ -1,0 +1,44 @@
+.sideBar{
+    background-color: #FAFAFA;
+}
+.socialRegister{
+    outline: none;
+    border: 2px solid black;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 100px;
+}
+
+/* Default styles for mobile-first design */
+
+/* Small devices (phones, 350px - 575px) */
+@media (min-width: 350px) and (max-width: 575px) {
+    .responsiveRegister{
+        margin-top: 250px;
+    }
+  }
+  
+  /* Medium devices (tablets, 576px - 767px) */
+  @media (min-width: 576px) and (max-width: 767px) {
+  
+  }
+  
+  /* Large devices (small laptops, 768px - 991px) */
+  @media (min-width: 768px) and (max-width: 991px) {
+  
+  }
+  
+  /* Extra large devices (desktops, 992px - 1199px) */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for desktops */
+  }
+  
+  /* Extra extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    /* Styles for large desktops */
+  }
+  

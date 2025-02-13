@@ -11,9 +11,19 @@ export default function Home() {
 
   return (
     <>
-      <section className="container mt-5">
+      <section className="container ">
         <div className="row">
           <div className="col-lg-7">
+            <span>
+              <Image
+                src={'/Images/globe.svg'}
+                width={100}
+                height={100}
+                alt="Globe"
+                className={`pAbsolute ${styles.globeAnimation} `}
+                style={{ left: "-50px", top: "50px" }}
+              />
+            </span>
             <span className={`${styles.headerTag} mb-4`}>99% Accurate Database</span>
             <h1 className={`${styles.mainHeading} mb-4`}>Your Success <br />
               Start With  ATPL Pro</h1>
@@ -315,10 +325,10 @@ export default function Home() {
               <div className="card-body d-flex justify-content-center pt-0 pb-0">
                 <div className="row w-100">
                   <div className="col-lg-6 ps-0">
-                   <VerticalMarqueeCarousel data={data.certificate.leftcertificate} direction={'topToBottom'}/>
+                    <VerticalMarqueeCarousel data={data.certificate.leftcertificate} direction={'topToBottom'} />
                   </div>
                   <div className="col-lg-6 col-sm-0 pe-0">
-                    <VerticalMarqueeCarousel data={data.certificate.rightcertificate} direction={'bottomToTop'}/>
+                    <VerticalMarqueeCarousel data={data.certificate.rightcertificate} direction={'bottomToTop'} />
                   </div>
                 </div>
               </div>
