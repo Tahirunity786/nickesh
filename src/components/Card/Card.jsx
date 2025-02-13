@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { memo } from "react";
+import styles from './card.module.css';
 
 // Reusable Card Component
 const Card = ({ data }) => {
@@ -44,5 +45,19 @@ const Card = ({ data }) => {
   );
 };
 
-// Memoizing for Performance Optimization
-export default memo(Card);
+// FloatingStat Component
+const FloatingStat = ({ icon, color, title, value, extraStyles = {} }) => (
+  <div className={`${styles.floatContainer} pAbsolute`}>
+    <div className={`${styles.circle} `} style={{ backgroundColor: color, ...extraStyles }}>
+      <Image src={icon} width={30} height={30} alt="icon" />
+    </div>
+    <div className={styles.floatContent}>
+      <h6>{title}</h6>
+      <p>{value}</p>
+    </div>
+  </div>
+);
+
+// Named Exports
+export const MemoizedCard = memo(Card);
+export const MemoizedFloatingStat = memo(FloatingStat);

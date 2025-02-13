@@ -4,6 +4,8 @@ import MarqueeCarousel from "@/components/MarqueeCarousel/MarqueeCarousel";
 import UltraMarqueeCarousel from "@/components/Carousal/Carousal";
 import data from '@/app/icData'
 import Faqa from "@/components/Faqs/Faqa";
+import VerticalMarqueeCarousel from "@/components/VerticalMarquee/VerticalMarquee";
+
 export default function Home() {
 
 
@@ -65,7 +67,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
       </section>
       <MarqueeCarousel />
       <section className="container pRelative" style={{ marginTop: "50px", marginBottom: "50px", height: "auto" }}>
@@ -89,10 +90,6 @@ export default function Home() {
             strokeDasharray="5,5"
             transform="translate(0, 40)" />
         </svg>
-
-
-
-
         <div className="row">
           <div className="col-lg-4 p-3 pRelative">
             <div className={`${styles.circleItem}`} style={{ backgroundColor: "#1A73E8", position: "absolute", zIndex: "100", top: "-20px", left: "44%", right: "44%" }}>
@@ -318,146 +315,10 @@ export default function Home() {
               <div className="card-body d-flex justify-content-center pt-0 pb-0">
                 <div className="row w-100">
                   <div className="col-lg-6 ps-0">
-                    <div className="card shadow-sm border border-light rounded-2 mb-3">
-                      <div className="ps-2 pe-2">
-
-                        <Image
-                          src={'/Images/certificate.svg'}
-                          className="card-img-top"
-                          alt="certificate"
-                          width={300}
-                          height={120}
-                        />
-
-                      </div>
-                      <div className="card-body pt-1 pb-1">
-                        <div className="d-flex justify-content-between mb-1">
-                          <div className="d-flex justify-content-start align-items-center">
-                            <div className={`${styles.circleItem} me-2`} style={{ backgroundColor: "wheat", width: "40px", height: "40px" }}>
-                              <Image
-                                src={'/Images/userReal.svg'}
-                                width={40}
-                                height={40}
-                                alt="real user"
-                              />
-                            </div>
-                            <div>
-                              <h6 className="mb-1" style={{ fontWeight: "bold" }}>Yatinder</h6>
-                              <p className="mb-0" style={{ fontSize: "12px" }}>9 days ago</p>
-                            </div>
-                          </div>
-                          <div>
-                            <span className="badge text-bg-primary">Score 10/10</span>
-                          </div>
-                        </div>
-                        <div className="d-flex justify-content-between align-items-center">
-                          <div className="d-flex justify-content-between align-items-center">
-                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
-                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
-                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
-                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
-                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
-                          </div>
-                          <div>
-                            <span className="badge text-bg-primary" style={{ cursor: "pointer" }}>certificate</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card shadow-sm border border-light rounded-2 mb-3">
-                      <div className="ps-2 pe-2">
-
-                        <Image
-                          src={'/Images/certificate.svg'}
-                          className="card-img-top"
-                          alt="certificate"
-                          width={300}
-                          height={120}
-                        />
-
-                      </div>
-                      <div className="card-body pt-1 pb-1">
-                        <div className="d-flex justify-content-between mb-1">
-                          <div className="d-flex justify-content-start align-items-center">
-                            <div className={`${styles.circleItem} me-2`} style={{ backgroundColor: "wheat", width: "40px", height: "40px" }}>
-                              <Image
-                                src={'/Images/userReal.svg'}
-                                width={40}
-                                height={40}
-                                alt="real user"
-                              />
-                            </div>
-                            <div>
-                              <h6 className="mb-1" style={{ fontWeight: "bold" }}>Yatinder</h6>
-                              <p className="mb-0" style={{ fontSize: "12px" }}>9 days ago</p>
-                            </div>
-                          </div>
-                          <div>
-                            <span className="badge text-bg-primary">Score 10/10</span>
-                          </div>
-                        </div>
-                        <div className="d-flex justify-content-between align-items-center">
-                          <div className="d-flex justify-content-between align-items-center">
-                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
-                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
-                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
-                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
-                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
-                          </div>
-                          <div>
-                            <span className="badge text-bg-primary" style={{ cursor: "pointer" }}>certificate</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                   <VerticalMarqueeCarousel data={data.certificate.leftcertificate} direction={'topToBottom'}/>
                   </div>
-                  <div className="col-lg-6 pe-0">
-                    <div className="card shadow-sm border border-light rounded-2 mb-3">
-                      <div className="ps-2 pe-2">
-
-                        <Image
-                          src={'/Images/certificate.svg'}
-                          className="card-img-top"
-                          alt="certificate"
-                          width={300}
-                          height={120}
-                        />
-
-                      </div>
-                      <div className="card-body pt-1 pb-1">
-                        <div className="d-flex justify-content-between mb-1">
-                          <div className="d-flex justify-content-start align-items-center">
-                            <div className={`${styles.circleItem} me-2`} style={{ backgroundColor: "wheat", width: "40px", height: "40px" }}>
-                              <Image
-                                src={'/Images/userReal.svg'}
-                                width={40}
-                                height={40}
-                                alt="real user"
-                              />
-                            </div>
-                            <div>
-                              <h6 className="mb-1" style={{ fontWeight: "bold" }}>Yatinder</h6>
-                              <p className="mb-0" style={{ fontSize: "12px" }}>9 days ago</p>
-                            </div>
-                          </div>
-                          <div>
-                            <span className="badge text-bg-primary">Score 10/10</span>
-                          </div>
-                        </div>
-                        <div className="d-flex justify-content-between align-items-center">
-                          <div className="d-flex justify-content-between align-items-center">
-                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
-                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
-                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
-                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
-                            <Image src={'/Images/star.svg'} width={15} height={15} alt="star" className="me-1" />
-                          </div>
-                          <div>
-                            <span className="badge text-bg-primary" style={{ cursor: "pointer" }}>certificate</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div className="col-lg-6 col-sm-0 pe-0">
+                    <VerticalMarqueeCarousel data={data.certificate.rightcertificate} direction={'bottomToTop'}/>
                   </div>
                 </div>
               </div>
@@ -474,7 +335,7 @@ export default function Home() {
             height={58}
             alt="lines"
             className="pAbsolute"
-            style={{top: "12px", right: "38%", zIndex: "100" }}
+            style={{ top: "12px", right: "38%", zIndex: "100" }}
           />
           <p>ATPL Pro empowers aspiring pilots and aviation professionals with top-quality tools and resources, serving students, flight schools, <br /> and aviation authorities worldwide.</p>
         </div>
@@ -567,7 +428,7 @@ export default function Home() {
                 height={50}
                 alt="circle"
                 className="pAbsolute"
-                style={{top: "100px" }}
+                style={{ top: "100px" }}
               />
               <Image
                 src={'/Images/border-circle1.svg'}
@@ -575,7 +436,7 @@ export default function Home() {
                 height={100}
                 alt="circle"
                 className="pAbsolute"
-                style={{top: "0px", right: "80px" }}
+                style={{ top: "0px", right: "80px" }}
               />
               <Image
                 src={'/Images/aero-plain.svg'}
@@ -583,7 +444,7 @@ export default function Home() {
                 height={100}
                 alt="circle"
                 className="pAbsolute"
-                style={{top: "20px", right: "110px" }}
+                style={{ top: "20px", right: "110px" }}
               />
               <Image
                 src={'/Images/background__322011.png'}

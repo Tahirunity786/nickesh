@@ -84,5 +84,23 @@ const faqs = {
   ]
 };
 
-export default {cards, faqs};
+
+const certificate = {
+  leftcertificate : [
+    {id:1, user:"/Images/userReal.svg", image:"/Images/certificate.svg", name:"Lorem", issueDate:"9 days", score:"10"},
+    {id:2, user:"/Images/userReal.svg", image:"/Images/certificate.svg", name:"Lorem", issueDate:"9 days", score:"10"},
+    {id:3, user:"/Images/userReal.svg", image:"/Images/certificate.svg", name:"Lorem", issueDate:"9 days", score:"10"},
+    {id:4, user:"/Images/userReal.svg", image:"/Images/certificate.svg", name:"Lorem", issueDate:"9 days", score:"10"},
+    {id:5, user:"/Images/userReal.svg", image:"/Images/certificate.svg", name:"Lorem", issueDate:"9 days", score:"10"},
+  ],
+  rightcertificate : [
+    {id:1, user:"/Images/userReal.svg", image:"/Images/certificate.svg", name:"Lorem", issueDate:"9 days", score:"10"},
+    {id:2, user:"/Images/userReal.svg", image:"/Images/certificate.svg", name:"Lorem", issueDate:"9 days", score:"10"},
+    {id:3, user:"/Images/userReal.svg", image:"/Images/certificate.svg", name:"Lorem", issueDate:"9 days", score:"10"},
+    {id:4, user:"/Images/userReal.svg", image:"/Images/certificate.svg", name:"Lorem", issueDate:"9 days", score:"10"},
+    {id:5, user:"/Images/userReal.svg", image:"/Images/certificate.svg", name:"Lorem", issueDate:"9 days", score:"10"},
+  ]
+}
+ 
+export default {cards, faqs, certificate};
 
