@@ -58,7 +58,7 @@ export default function Navbar({ backGround, logoVariation, buttonSignUp }) {
         {/* Buttons */}
         <div className="d-flex gap-3 ">
           <button type="button" className={`${styles.navButtonAeroWarning} ${styles.navBtnAro}`} onClick={() => { router.push('/e-shop') }} >E-Shop</button>
-          <button type="button" className={`${styles.navButtonAeroPrimary} ${styles.navBtnAro}`} style={{ backgroundColor: `${buttonSignUp}` }}>Sign In</button>
+          <button type="button" className={`${styles.navButtonAeroPrimary} ${styles.navBtnAro}`} style={{ backgroundColor: `${buttonSignUp}` }}  onClick={() => { router.push('/register') }}>Sign In</button>
         </div>
         {/* <div className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`} style={{position:"relative"}}> */}
         {/* </div> */}

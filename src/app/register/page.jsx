@@ -43,12 +43,12 @@ const Page = () => {
             <input type="email" className="form-control" id="email" placeholder="Enter your email address" />
           </div>
           <div className="mb-2 ps-2 pe-2">
-            <button className={`${styles.socialRegister}`}><div className='d-flex justify-content-start'><Image width={30} height={30} className='me-3' src={'/Images/social/google.svg'}/>Sign up with Google</div>  </button>
-            <button className={`${styles.socialRegister}`}><div className='d-flex justify-content-start'><Image width={30} height={30} className='me-3' src={'/Images/social/2.svg'}/>Sign up with Facebook</div>  </button>
-            <button className={`${styles.socialRegister}`}><div className='d-flex justify-content-start'><Image width={30} height={30} className='me-3' src={'/Images/social/apple.svg'}/>Sign up with Apple</div>  </button>
+            <button className={`${styles.socialRegister}`}><div className='d-flex justify-content-start'><Image width={30} height={30} className='me-3' alt='icon' src={'/Images/social/google.svg'}/>Sign up with Google</div>  </button>
+            <button className={`${styles.socialRegister}`}><div className='d-flex justify-content-start'><Image width={30} height={30} className='me-3' alt='icon' src={'/Images/social/2.svg'}/>Sign up with Facebook</div>  </button>
+            <button className={`${styles.socialRegister}`}><div className='d-flex justify-content-start'><Image width={30} height={30} className='me-3' alt='icon' src={'/Images/social/apple.svg'}/>Sign up with Apple</div>  </button>
           </div>
           <div className='text-center'>
-          <p>Have an account?  <Link href={'#'}>Login</Link></p>
+          <p>Have an account?  <Link href={'/login'} className='text-primary'>Login</Link></p>
           </div>
         </div>
 

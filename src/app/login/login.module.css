@@ -1,0 +1,26 @@
+.socialRegister {
+    outline: none;
+    border: 1px solid rgb(182, 182, 182);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 0px 8px;
+
+}
+
+.LoginBtn {
+    outline: none;
+    border: none;
+    background-color: #037EC2;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    margin-top: 10px;
+}
+.LoginBtn:hover{
+    background-color: #0194e3;
+}
