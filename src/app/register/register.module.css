@@ -9,9 +9,56 @@
     margin-bottom: 10px;
     background-color: white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 8px;
     padding-left: 100px;
 }
+.RegisternBtn {
+  outline: none;
+  border: none;
+  background-color: #037EC2;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all .3s ease-in-out;
+  margin-top: 10px;
+}
+.RegisternBtn:hover{
+  background-color: #0194e3;
+}
+
+.dividerWithText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.dividerWithText span {
+  font-size: 16px;
+  color: #000;
+  position: relative;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+.dividerWithText::before,
+.dividerWithText::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background-color: #ccc;
+}
+
+.dividerWithText::before {
+  margin-right: 10px;
+}
+
+.dividerWithText::after {
+  margin-left: 10px;
+}
+
 
 /* Default styles for mobile-first design */
 

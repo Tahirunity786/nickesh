@@ -10,6 +10,7 @@ const AuthLayout = ({ children }) => {
         justifyContent: "center",
         
       }}
+      className="mt-5 mb-5"
     >
       <div
         style={{

@@ -26,6 +26,7 @@ const Page = () => {
               </p>
             </div>
             <div className="mb-3 ps-2 pe-2" style={{ backgroundColor: "white" }}>
+
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
               </p>
@@ -38,17 +39,24 @@ const Page = () => {
             <h4 className='fw-bold'>Get started</h4>
             <p>Create your account know.</p>
           </div>
-          <div className="mb-3 ps-2 pe-2">
+          <div className="mb-1 ps-2 pe-2">
             <label htmlFor="email" className="form-label">Email address</label>
             <input type="email" className="form-control" id="email" placeholder="Enter your email address" />
           </div>
           <div className="mb-2 ps-2 pe-2">
-            <button className={`${styles.socialRegister}`}><div className='d-flex justify-content-start'><Image width={30} height={30} className='me-3' alt='icon' src={'/Images/social/google.svg'}/>Sign up with Google</div>  </button>
-            <button className={`${styles.socialRegister}`}><div className='d-flex justify-content-start'><Image width={30} height={30} className='me-3' alt='icon' src={'/Images/social/2.svg'}/>Sign up with Facebook</div>  </button>
-            <button className={`${styles.socialRegister}`}><div className='d-flex justify-content-start'><Image width={30} height={30} className='me-3' alt='icon' src={'/Images/social/apple.svg'}/>Sign up with Apple</div>  </button>
+                <button className={`w-100 ${styles.RegisternBtn} `}>Sign In</button>
+            </div>
+          <div className={`${styles.dividerWithText} ps-2 pe-2`}>
+            <span>Or</span>
           </div>
+          <div className="mb-2 ps-2 pe-2">
+            <button className={`${styles.socialRegister}`}><div className='d-flex justify-content-start'><Image width={30} height={30} className='me-3' alt='icon' src={'/Images/social/google.svg'} />Sign up with Google</div>  </button>
+            <button className={`${styles.socialRegister}`}><div className='d-flex justify-content-start'><Image width={30} height={30} className='me-3' alt='icon' src={'/Images/social/2.svg'} />Sign up with Facebook</div>  </button>
+            <button className={`${styles.socialRegister}`}><div className='d-flex justify-content-start'><Image width={30} height={30} className='me-3' alt='icon' src={'/Images/social/apple.svg'} />Sign up with Apple</div>  </button>
+          </div>
+
           <div className='text-center'>
-          <p>Have an account?  <Link href={'/login'} className='text-primary'>Login</Link></p>
+            <p>Have an account?  <Link href={'/login'} className='text-primary'>Login</Link></p>
           </div>
         </div>
 

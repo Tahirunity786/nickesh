@@ -7,7 +7,7 @@ const Page = () => {
 
         <>
 
-            <div className="mb-2  d-flex flex-column justify-content-center align-items-center">
+            <div className="mb-2  d-flex flex-column justify-content-center align-items-center ">
                 <div className="mb-3 ps-sm-5">
 
                     <Image
@@ -28,6 +28,9 @@ const Page = () => {
                 <button className={`${styles.socialRegister}`}><Image width={30} height={30} alt='icon' src={'/Images/social/2.svg'} /> </button>
                 <button className={`${styles.socialRegister}`}><Image width={30} height={30} alt='icon' src={'/Images/social/apple.svg'} /></button>
             </div>
+            <div className={`${styles.dividerWithText} ps-2 pe-2`}>
+            <span>Or</span>
+          </div>
             <div className="mb-2 ps-2 pe-2">
 
                 <div className="mb-3 ">
