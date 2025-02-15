@@ -9,8 +9,8 @@ export default function ConditionalWrapper({ children }) {
   const pathname = usePathname();
 
   // Routes where Navbar and Footer should be hidden
-  const hideNavbarRoutes = ["/404", "/login", "/register"];
-  const hideFooterRoutes = ["/404", "/login", "/register"];
+  const hideNavbarRoutes = ["/404", "/login", "/register",'/register/continue', "/forgot-password", "/reset-password"];
+  const hideFooterRoutes = ["/404", "/login", "/register", '/register/continue', "/forgot-password", "/reset-password"];
 
   // Determine visibility
   const showNavbar = !hideNavbarRoutes.includes(pathname);

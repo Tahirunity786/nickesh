@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import { SessionProvider } from "next-auth/react";
 
 const AuthLayout = ({ children }) => {
   return (
@@ -8,21 +9,14 @@ const AuthLayout = ({ children }) => {
         height: "100vh",
         alignItems: "center",
         justifyContent: "center",
-        
+
       }}
     >
-      <div
-        style={{
-          width: "100%",
-          maxWidth: "800px",
-          background: "#ffffff",
-          padding: "20px",
-          borderRadius: "12px",
-          border: "1px solid #D9D9D9"
-        }}
-      >
-        {children}
-      </div>
+      
+        <SessionProvider>
+          {children}
+        </SessionProvider>
+     
     </div>
   );
 };

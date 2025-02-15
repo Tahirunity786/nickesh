@@ -98,6 +98,7 @@ const Faqa = () => {
                   maxHeight: openIndex === index ? '100px' : '0',
                   overflow: 'hidden',
                   transition: 'max-height 0.3s ease-in-out',
+                  marginBottom:"20px"
                 }}
               >
                 <p className="px-3 py-2 mb-2 h-100">{faq.answer}</p>

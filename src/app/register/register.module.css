@@ -58,6 +58,39 @@
 .dividerWithText::after {
   margin-left: 10px;
 }
+.circleItem {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+
+}
+
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-in-out;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+}
 
 
 /* Default styles for mobile-first design */

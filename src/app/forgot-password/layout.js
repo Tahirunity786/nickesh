@@ -1,6 +1,5 @@
-"use client";
-import { SessionProvider } from "next-auth/react";
 import React from "react";
+
 const AuthLayout = ({ children }) => {
   return (
     <div
@@ -11,7 +10,7 @@ const AuthLayout = ({ children }) => {
         justifyContent: "center",
         
       }}
-      className="mt-5 mb-5"
+      
     >
       <div
         style={{
@@ -23,10 +22,7 @@ const AuthLayout = ({ children }) => {
           
         }}
       >
-        <SessionProvider>
         {children}
-
-        </SessionProvider>
       </div>
     </div>
   );
