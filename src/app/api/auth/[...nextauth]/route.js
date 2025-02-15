@@ -9,15 +9,15 @@ const handler = NextAuth({
       clientId: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID,
       clientSecret: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET,
     }),
-    AppleProvider({
-      clientId: process.env.APPLE_ID,
-      clientSecret: {
-        appleId: process.env.NEXT_PUBLIC_APPLE_ID,
-        teamId: process.env.NEXT_PUBLIC_APPLE_TEAM_ID,
-        privateKey: process.env.NEXT_PUBLIC_APPLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
-        keyId: process.env.NEXT_PUBLIC_APPLE_KEY_ID,
-      },
-    }),
+    // AppleProvider({
+    //   clientId: process.env.APPLE_ID,
+    //   clientSecret: {
+    //     appleId: process.env.NEXT_PUBLIC_APPLE_ID,
+    //     teamId: process.env.NEXT_PUBLIC_APPLE_TEAM_ID,
+    //     privateKey: process.env.NEXT_PUBLIC_APPLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+    //     keyId: process.env.NEXT_PUBLIC_APPLE_KEY_ID,
+    //   },
+    // }),
     FacebookProvider({
       clientId: process.env.FACEBOOK_CLIENT_ID,
       clientSecret: process.env.FACEBOOK_CLIENT_SECRET,

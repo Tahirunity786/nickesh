@@ -45,7 +45,6 @@ const Page = () => {
             <div className="mb-2  d-flex justify-content-center align-items-center">
                 <button className={`${styles.socialRegister}`} onClick={() => signIn("google")}><Image width={30} height={30} alt='icon' src={'/Images/social/google.svg'} /></button>
                 <button className={`${styles.socialRegister}`} onClick={() => signIn("facebook")}><Image width={30} height={30} alt='icon' src={'/Images/social/2.svg'} /> </button>
-                <button className={`${styles.socialRegister}`} onClick={() => signIn("apple")}><Image width={30} height={30} alt='icon' src={'/Images/social/apple.svg'} /></button>
             </div>
             <div className={`${styles.dividerWithText} ps-2 pe-2`}>
                 <span>Or</span>
@@ -73,7 +72,7 @@ const Page = () => {
             <div className="mb-2">
             
            
-            <button className={`w-100 ${styles.LoginBtn}`} onClick={() => signIn("google")}>Sign In</button>
+            <button className={`w-100 ${styles.LoginBtn}`}>Sign In</button>
         </div >
             <div className="text-center">
                 <p>Don’t have an account? <Link href={'/register'} className='text-primary'> Sign Up</Link></p>

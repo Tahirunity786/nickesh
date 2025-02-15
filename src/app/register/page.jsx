@@ -85,12 +85,7 @@ const Page = () => {
                     Sign up with Facebook
                   </div>
                 </button>
-                <button className={`${styles.socialRegister}`} onClick={() => signIn('apple')}>
-                  <div className='d-flex justify-content-start'>
-                    <Image width={30} height={30} className='me-3' alt='icon' src={'/Images/social/apple.svg'} />
-                    Sign up with Apple
-                  </div>
-                </button>
+                
               </div>
               <div className='text-center'>
                 <p>Have an account?  <Link href={'/login'} className='text-primary'>Login</Link></p>
