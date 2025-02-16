@@ -16,8 +16,8 @@ const Offcanvas = ({ navlinks }) => {
                 </Link>
                 <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div className="offcanvas-body">
-                <div className="d-flex flex-column h-100 justify-content-between">
+            <div className="offcanvas-body h-100">
+                <div className="d-flex flex-column justify-content-between" style={{height:"80%"}}>
 
                     <ul className='ms-0 ps-0' style={{ listStyle: "none" }}>
                         {
@@ -27,8 +27,8 @@ const Offcanvas = ({ navlinks }) => {
                             ))
                         }
                     </ul>
-                    <div className='mb-4'>
-                        <button className={`${styles.navButtonAeroWarning} ${styles.navBtnAro} mb-3`}>E Shop</button>
+                    <div className='mb-4 '>
+                        <button className={`${styles.navButtonAeroWarning} ${styles.navBtnAro} mb-2`}>E Shop</button>
                         <button className={`${styles.navButtonAeroPrimary} ${styles.navBtnAro}`}>Sign Up</button>
                     </div>
 
