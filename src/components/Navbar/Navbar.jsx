@@ -22,7 +22,7 @@ export default function Navbar({ backGround, logoVariation, buttonSignUp }) {
   ];
 
   return (
-    <nav className={`navbar navbar-expand-lg ${backGround ? backGround : 'bg-white'} ${styles.resMargin} pt-1 mb-lg-5 pRelative`}>
+    <nav className={`navbar navbar-expand-lg ${backGround ? backGround : 'bg-white'} ${styles.resMargin} pt-1 pb-lg-5 pRelative`}>
       <div className="container justify-content-sm-start">
         {/* Mobile Menu Toggle */}
         <div className="d-flex justify-content-start align-items-center gap-2">
