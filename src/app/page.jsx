@@ -336,7 +336,7 @@ export default function Home() {
                   <div className="col-lg-6 ps-0">
                     <VerticalMarqueeCarousel data={data.certificate.leftcertificate} direction={'topToBottom'} />
                   </div>
-                  <div className="col-lg-6 col-sm-0 pe-0">
+                  <div className={`col-lg-6 col-sm-0 pe-0 ${styles.resNone}`}>
                     <VerticalMarqueeCarousel data={data.certificate.rightcertificate} direction={'bottomToTop'} />
                   </div>
                 </div>

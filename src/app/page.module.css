@@ -395,7 +395,7 @@ a.secondary {
 
 /* Small devices (phones, 350px - 575px) */
 @media (min-width: 350px) and (max-width: 575px) {
-  .globeAnimation {
+  .globeAnimation, .resNone {
     display: none;
   }
 
