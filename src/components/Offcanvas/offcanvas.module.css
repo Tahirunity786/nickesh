@@ -4,6 +4,8 @@
 .navActive{
     background-color: var(--aero-primary);
     color: var(--aero-white);
+    padding: 10px 22px;
+    transition: all .3s ease-in-out;
 }
 
 .navButtonAeroWarning {

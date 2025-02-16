@@ -23,7 +23,7 @@ const Offcanvas = ({ navlinks }) => {
                         {
                             navlinks.map((items, index) => (
 
-                                <li key={index} className={` ${pathname === items.path ? `${styles.navActive} p-2 rounded-2` : "ms-3 me-3 p-2"} `}><Link href={items.path} className='w-100 d-block'>{items.name}</Link></li>
+                                <li key={index} className={` ${pathname === items.path ? `${styles.navActive}  rounded-2` : "ms-3 me-3 p-2"} `}><Link href={items.path} className='w-100 d-block'>{items.name}</Link></li>
                             ))
                         }
                     </ul>
