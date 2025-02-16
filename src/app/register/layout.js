@@ -9,6 +9,8 @@ const AuthLayout = ({ children }) => {
         height: "100vh",
         alignItems: "center",
         justifyContent: "center",
+        marginBottom:"20px",
+        marginTop:"20px"
 
       }}
     >

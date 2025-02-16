@@ -27,18 +27,24 @@ export default function Home() {
             <span className={`${styles.headerTag} mb-4`}>99% Accurate Database</span>
             <h1 className={`${styles.mainHeading} mb-4`}>Your Success <br />
               Start With  ATPL Pro</h1>
-            <p className={'mb-5'}>
+            <p className={`mb-5 ${styles.mainPara}`}>
               ATPL Pro empowers aspiring pilots worldwide with comprehensive ATPL
               courses and cutting-edge study resources.
             </p>
-            <button className={styles.mainButton}>
-              Get Started
-            </button>
+            <div className="d-flex gap-3">
+
+              <button className={styles.mainButton}>
+                Get Started
+              </button>
+              <button className={`${styles.mainButton} ${styles.secBtn}`}>
+                E Shop
+              </button>
+            </div>
 
           </div>
           <div className="col-lg-5 pRelative">
             <div className={`${styles.flowtingDiv} ${styles.float}`}>
-              <div className={`${styles.circleItem}`} style={{ backgroundColor: "#12BB6A" }}>
+              <div className={`${styles.circleItem} aeroGreen`}>
                 <Image
                   src={'/Images/icon2.svg'}
                   width={30}
@@ -52,7 +58,7 @@ export default function Home() {
               </div>
             </div>
             <div className={`${styles.flowtingDivLower} ${styles.float}`}>
-              <div className={`${styles.circleItem}`} style={{ position: "absolute", top: "-20px", backgroundColor: "#8121FB" }}>
+              <div className={`${styles.circleItem} pAbsolute aeroPurple`} style={{ top: "-20px" }}>
                 <Image
                   src={'/Images/icon1.svg'}
                   width={30}
@@ -60,7 +66,7 @@ export default function Home() {
                   alt="icon"
                 />
               </div>
-              <div className={`${styles.floatContent}`} style={{ background: "#F5F5F5", padding: "10px 15px", borderRadius: "10px" }}>
+              <div className={`${styles.floatContent} aeroWhiteSmoke rounded-2`} style={{ padding: "10px 15px" }}>
                 <h6 className="mt-4">Certified Pilots</h6>
                 <p className="mb-0">16K</p>
               </div>
@@ -78,31 +84,32 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <MarqueeCarousel />
-      <section className="container pRelative" style={{ marginTop: "50px", marginBottom: "50px", height: "auto" }}>
-        <div className="text-center mb-4">
-          <h4 style={{ fontWeight: "bold", marginBottom: "70px" }}>Your Path To ATPL Success</h4>
+      <MarqueeCarousel></MarqueeCarousel>
+      <section className="container pRelative mb-100 mt-100" style={{ height: "auto" }}>
+        <div className="text-center mb-lg-100 mt-lg-100">
+          <h4 style={{ fontWeight: "bold" }}>Your Path To ATPL Success</h4>
         </div>
-
-        <svg className={styles.curveLineleft} width="50%" height="180" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
-          <path d="M 10 110 A 160 80 0 0 1 290 110"
-            stroke="black"
-            fill="transparent"
-            strokeWidth="2"
-            strokeDasharray="5,5"
-            transform="translate(0, 40)" />
-        </svg>
-        <svg className={styles.curveLineRight} width="50%" height="180" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
-          <path d="M 10 110 A 160 80 0 0 1 290 110"
-            stroke="black"
-            fill="transparent"
-            strokeWidth="2"
-            strokeDasharray="5,5"
-            transform="translate(0, 40)" />
-        </svg>
+        <div className={styles.resNonePartSVG}>
+          <svg className={styles.curveLineleft} width="50%" height="180" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 10 110 A 160 80 0 0 1 290 110"
+              stroke="black"
+              fill="transparent"
+              strokeWidth="2"
+              strokeDasharray="5,5"
+              transform="translate(0, 40)" />
+          </svg>
+          <svg className={styles.curveLineRight} width="50%" height="180" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 10 110 A 160 80 0 0 1 290 110"
+              stroke="black"
+              fill="transparent"
+              strokeWidth="2"
+              strokeDasharray="5,5"
+              transform="translate(0, 40)" />
+          </svg>
+        </div>
         <div className="row">
           <div className="col-lg-4 p-3 pRelative">
-            <div className={`${styles.circleItem}`} style={{ backgroundColor: "#1A73E8", position: "absolute", zIndex: "100", top: "-20px", left: "44%", right: "44%" }}>
+            <div className={`${styles.circleItem}  aeroPrimary`} >
               <Image
                 src={'/Images/plane-tilt.svg'}
                 width={25}
@@ -154,19 +161,20 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section style={{ marginTop: "100px", marginBottom: "50px", backgroundColor: "#F5F5F5", paddingTop: "50px" }}>
+      <section className="mb-100 mt-100 aeroWhiteSmoke pt-50">
         <div className="mb-3 text-center">
-          <h4 style={{ fontWeight: "bold", marginBottom: "20px" }}>Our Database Contains Following <span style={{ color: "#1A73E8" }}>Countries</span></h4>
+          <h4 className="mb-20 fw-bold">Our Database Contains Following <span className="aeroColorPrimary">Countries</span></h4>
           <p>Choose your aviation authority to access region-specific ATPL exam questions and study materials</p>
         </div>
         <UltraMarqueeCarousel cards={data.cards} />
-        <div className="pRelative text-end" style={{ marginTop: "100px", height: "auto" }}>
+        <div className="pRelative text-end mt-100 h-auto">
           <Image
             src={'/Images/11.svg'}
             width={132}
             height={82}
             alt="aeroplane"
-            style={{ position: "absolute", top: "-50px", right: "10%" }}
+            className="pAbsolute"
+            style={{ top: "-50px", right: "10%" }}
           />
           <Image
             src={'/Images/12.svg'}
@@ -178,11 +186,11 @@ export default function Home() {
         </div>
 
       </section>
-      <section className="container" style={{ marginBottom: "50px" }}>
+      <section className="container mt-100 mb-100">
         <div className="mb-3 text-center">
-          <h4 style={{ fontWeight: "bold" }}>Our Success Stories</h4>
+          <h4 className="fw-bold">Our Success Stories</h4>
         </div>
-        <div className="row" style={{ marginBottom: "50px" }}>
+        <div className="row mt-50" >
           <div className="col-lg-3">
             <div className="card h-100 shadow-sm border border-light rounded-4">
               <div className="card-body text-center">
@@ -194,7 +202,7 @@ export default function Home() {
                     alt="users"
                   />
                 </div>
-                <h6 style={{ fontWeight: "bold" }}>17,000+</h6>
+                <h6 className="fw-bold">17,000+</h6>
                 <p className="mb-0">Students Trained</p>
 
               </div>
@@ -211,7 +219,7 @@ export default function Home() {
                     alt="users"
                   />
                 </div>
-                <h6 style={{ fontWeight: "bold" }}>99%</h6>
+                <h6 className="fw-bold">99%</h6>
                 <p className="mb-0">Pass Rate</p>
 
               </div>
@@ -228,7 +236,7 @@ export default function Home() {
                     alt="users"
                   />
                 </div>
-                <h6 style={{ fontWeight: "bold" }}>4.95</h6>
+                <h6 className="fw-bold">4.95</h6>
                 <p className="mb-0">Students Rating</p>
 
               </div>
@@ -245,7 +253,7 @@ export default function Home() {
                     alt="users"
                   />
                 </div>
-                <h6 style={{ fontWeight: "bold" }}>14</h6>
+                <h6 className="fw-bold">14</h6>
                 <p className="mb-0">Course Modules</p>
 
               </div>
@@ -267,7 +275,7 @@ export default function Home() {
                 </div>
                 <div>
 
-                  <h6 style={{ fontWeight: "bold" }}>Industry Leading Database</h6>
+                  <h6 className="fw-bold">Industry Leading Database</h6>
                   <p className="mb-0">Comprehensive study materials developed by experienced airline captains</p>
 
                 </div>
@@ -285,7 +293,7 @@ export default function Home() {
                 </div>
                 <div>
 
-                  <h6 style={{ fontWeight: "bold" }}>Expert Support</h6>
+                  <h6 className="fw-bold">Expert Support</h6>
                   <p className="mb-0">Get guidance from expert support</p>
 
                 </div>
@@ -303,7 +311,7 @@ export default function Home() {
                 </div>
                 <div>
 
-                  <h6 style={{ fontWeight: "bold" }}>Proven Track Record</h6>
+                  <h6 className="fw-bold">Proven Track Record</h6>
                   <p className="mb-0">Join our community of successful pilots worldwide</p>
 
                 </div>
@@ -336,9 +344,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="container mb-50">
+      <section className="container mb-100">
         <div className="text-center pRelative mb-50">
-          <h4 className="mb-50 fw-bold">Why ATPL <span style={{ color: "#1A73E8" }}>Pro?</span></h4>
+          <h4 className="mb-50 fw-bold">Why ATPL <span className="color">Pro?</span></h4>
           <Image
             src={'/Images/double-lines.svg'}
             width={178}
@@ -468,7 +476,7 @@ export default function Home() {
         </div>
 
       </section>
-      <section className={styles.bgWave} style={{ marginBottom: "50px", overflow: "hidden" }}>
+      <section className={`${styles.bgWave} mb-100`} style={{ overflow: "hidden" }}>
         <div className="container">
 
           <div className="text-center" style={{ position: "relative", marginBottom: "50px" }}>

@@ -1,0 +1,35 @@
+.navLink{
+    margin-bottom: 20px;
+}
+.navActive{
+    background-color: var(--aero-primary);
+    color: var(--aero-white);
+}
+
+.navButtonAeroWarning {
+    background-color: #FFA726;
+    color: black;
+    padding: 8px 30px;
+    transition: all .3s ease-in-out;
+}
+.navButtonAeroPrimary {
+    background-color: var(--aero-primary);
+    color: var(--aero-white);
+    padding: 7px 20px;
+    
+}
+.navBtnAro{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 100%;
+
+}
+
+.navButtonAeroWarning:hover{
+    background-color: var(--aero-warning-hover);
+}
+.navButtonAeroPrimary:hover {
+    background-color: var(--aero-primary-hover);
+}

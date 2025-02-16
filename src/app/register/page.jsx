@@ -32,7 +32,11 @@ const Page = () => {
             background: "#ffffff",
             padding: "20px",
             borderRadius: "12px",
-            border: "1px solid #D9D9D9"
+            border: "1px solid #D9D9D9",
+            marginLeft:"5px",
+            marginRight:"5px",
+            
+
           }}
         >
 
@@ -125,13 +129,13 @@ const Page = () => {
             <div className="row">
               <div className="col-lg-6 mb-3">
 
-                <label for="fullname" className="form-label">First Name</label>
+                <label htmlFor="fullname" className="form-label">First Name</label>
                 <input type="text" className="form-control" id="fullname" placeholder="Jhon" />
 
               </div>
               <div className="col-lg-6 mb-3">
 
-                <label for="lastname" className="form-label">Last Name</label>
+                <label htmlFor="lastname" className="form-label">Last Name</label>
                 <input type="text" className="form-control" id="lastname" placeholder="Smith" />
 
               </div>
@@ -139,7 +143,7 @@ const Page = () => {
             </div>
             <div className="mb-3 pRelative">
 
-              <label for="pass1" className="form-label">Password</label>
+              <label htmlFor="pass1" className="form-label">Password</label>
               <input type="password" className="form-control" id="pass1" placeholder='Your Password' />
               <span className='pAbsolute'>
 
@@ -147,7 +151,7 @@ const Page = () => {
             </div>
             <div className="mb-1 pRelative">
 
-              <label for="pass2" className="form-label">Confirm Password</label>
+              <label htmlFor="pass2" className="form-label">Confirm Password</label>
               <input type="password" className="form-control" id="pass2" placeholder='Confirm Your Password' />
               <span className='pAbsolute'>
 

@@ -4,12 +4,19 @@ import { usePathname } from "next/navigation";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import styles from './conditional.module.css';
+import { useEffect } from "react";
+
 
 export default function ConditionalWrapper({ children }) {
   const pathname = usePathname();
 
+  useEffect(() => {
+    // Dynamically import the Bootstrap JavaScript
+    import('bootstrap/dist/js/bootstrap.bundle.min.js')
+
+  }, []);
   // Routes where Navbar and Footer should be hidden
-  const hideNavbarRoutes = ["/404", "/login", "/register",'/register/continue', "/forgot-password", "/reset-password"];
+  const hideNavbarRoutes = ["/404", "/login", "/register", '/register/continue', "/forgot-password", "/reset-password"];
   const hideFooterRoutes = ["/404", "/login", "/register", '/register/continue', "/forgot-password", "/reset-password"];
 
   // Determine visibility
@@ -32,10 +39,10 @@ export default function ConditionalWrapper({ children }) {
           buttonSignUp={buttonSignUpColor}
         />
       )}
-      
+
       {/* Main Content */}
       <main className="w-100">{children}</main>
-      
+
       {/* Conditional Footer Rendering */}
       {showFooter && <Footer />}
     </>

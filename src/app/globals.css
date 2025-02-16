@@ -12,6 +12,9 @@
   --aero-black:black;
   --aero-warning:#FFA726;
   --aero-warning-hover:#ffb340;
+  --aero-green:#12BB6A;
+  --aero-purple:#8121FB;
+  --aero-light-smoke:#F5F5F5;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,14 +57,47 @@ a {
   position: absolute;
 }
 
+.pb-50{
+  padding-bottom: 50px;
+}
+.pt-50{
+  padding-top: 50px;
+}
+.mb-20{
+  margin-bottom: 20px;
+}
 .mb-50{
   margin-bottom: 50px;
+}
+.mt-50{
+  margin-top: 50px;
 }
 .mt-100{
   margin-top: 100px;
 }
+.mt-lg-100{
+  margin-top: 100px;
+}
 .mb-100{
   margin-bottom: 100px;
+}
+.mb-lg-100{
+  margin-bottom: 100px;
+}
+.aeroGreen{
+  background-color: var(--aero-green);
+}
+.aeroPurple{
+  background-color: var(--aero-purple);
+}
+.aeroWhiteSmoke{
+  background-color: var(--aero-light-smoke);
+}
+.aeroPrimary{
+  background-color: var(--aero-primary);
+}
+.aeroColorPrimary{
+  color: var(--aero-primary);
 }
 
 
@@ -70,3 +106,12 @@ a {
     color-scheme: dark;
   }
 }
+@media (min-width: 350px) and (max-width: 575px) {
+  .mt-lg-100{
+    margin-top: 20px;
+  }
+  .mb-lg-100{
+    margin-bottom: 20px;
+  }
+}
+

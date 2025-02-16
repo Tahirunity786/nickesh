@@ -5,12 +5,12 @@ import Image from "next/image";
 import { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import styles from './navbar.module.css'
+import Offcanvas from "../Offcanvas/Offcanvas";
 
 
 
 export default function Navbar({ backGround, logoVariation, buttonSignUp }) {
   const router = useRouter()
-  const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
   const navItems = [
@@ -22,7 +22,7 @@ export default function Navbar({ backGround, logoVariation, buttonSignUp }) {
   ];
 
   return (
-    <nav className={`navbar navbar-expand-lg ${backGround ? backGround : 'bg-white'} py-3 pt-1`} style={{ position: "relative" }}>
+    <nav className={`navbar navbar-expand-lg ${backGround ? backGround : 'bg-white'} ${styles.resMargin} pt-1 mb-lg-5 pRelative`}>
       <div className="container justify-content-sm-start">
         {/* Mobile Menu Toggle */}
         <div className="d-flex justify-content-start align-items-center gap-2">
@@ -30,13 +30,13 @@ export default function Navbar({ backGround, logoVariation, buttonSignUp }) {
           <button
             className="navbar-toggler"
             type="button"
-            onClick={() => setMenuOpen(!menuOpen)}
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
           {/* Logo */}
-          <Link className="navbar-brand" href="/">
+          <Link className={`navbar-brand ${styles.navbarLogo}`} href="/">
             <Image src={logoVariation} alt="ATPL PRO" width={170} height={70} priority />
           </Link>
 
@@ -56,12 +56,11 @@ export default function Navbar({ backGround, logoVariation, buttonSignUp }) {
         </ul>
 
         {/* Buttons */}
-        <div className="d-flex gap-3 ">
+        <div className ={`gap-3 ${styles.dflexButton}`}>
           <button type="button" className={`${styles.navButtonAeroWarning} ${styles.navBtnAro}`} onClick={() => { router.push('/e-shop') }} >E-Shop</button>
           <button type="button" className={`${styles.navButtonAeroPrimary} ${styles.navBtnAro}`} style={{ backgroundColor: `${buttonSignUp}` }}  onClick={() => { router.push('/register') }}>Sign In</button>
         </div>
-        {/* <div className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`} style={{position:"relative"}}> */}
-        {/* </div> */}
+        <Offcanvas navlinks={navItems}/>
       </div>
     </nav>
   );

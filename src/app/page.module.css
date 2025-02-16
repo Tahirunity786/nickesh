@@ -284,6 +284,9 @@ a.secondary {
   top: -61px;
   right: 110px;
 }
+
+/* zIndex: "100", top: "-20px", left: "44%", right: "44%" */
+
 @keyframes floatUpDown {
   0% {
     transform: translateY(0);
@@ -365,6 +368,35 @@ a.secondary {
 @media (min-width: 350px) and (max-width: 575px) {
   .globeAnimation{
       display: none;
+  }
+  .mainHeading{
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .mainButton{
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    
+  }
+  .secBtn{
+    background-color: var(--aero-warning);
+    color: var(--aero-black);
+  }
+  .secBtn:hover{
+    background-color: var(--aero-warning-hover);
+    color: var(--aero-black);
+  }
+  .flowtingDiv{
+    z-index: 100;
+    left: 10px;
+    width: 148px;
+  }
+  .flowtingDivLower{
+    left: 0px;
+  }
+  .resNonePartSVG{
+    display: none;
   }
 }
 
