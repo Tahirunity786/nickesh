@@ -232,7 +232,7 @@ a.secondary {
 
 .circleColor {
   background: linear-gradient(to left, #438BF4, #3CB1F7);
-  
+
   /* Example colors */
 }
 
@@ -248,16 +248,17 @@ a.secondary {
   /* Ensure it takes up space */
 }
 
-.outlinenav{
+.outlinenav {
   border: 2px solid var(--aero-primary);
   color: black;
   padding: 7px 16px;
   border-radius: 500px;
   background-color: var(--aero-white);
   transition: all .3s ease-in-out;
-  
+
 }
-.activenav{
+
+.activenav {
   background-color: var(--aero-primary);
   color: var(--aero-white);
   padding: 8px 16px;
@@ -265,44 +266,69 @@ a.secondary {
   border: none;
   border: 2px solid var(--aero-primary);
 }
-.outlinenav:hover{
+
+.outlinenav:hover {
   background-color: var(--aero-primary);
   color: var(--aero-white);
-  
+
 }
-.curveLineleft{
-  transform: rotate(10deg); /* Rotates the arc 5 degrees */
-  transform-origin: center; /* Ensures it rotates around the center */
+
+.curveLineleft {
+  transform: rotate(10deg);
+  /* Rotates the arc 5 degrees */
+  transform-origin: center;
+  /* Ensures it rotates around the center */
   position: absolute;
   top: -61px;
   left: 110px;
 }
-.curveLineRight{
-  transform: rotate(-10deg); /* Rotates the arc 5 degrees */
-  transform-origin: center; /* Ensures it rotates around the center */
+
+.curveLineRight {
+  transform: rotate(-10deg);
+  /* Rotates the arc 5 degrees */
+  transform-origin: center;
+  /* Ensures it rotates around the center */
   position: absolute;
   top: -61px;
   right: 110px;
 }
 
-/* zIndex: "100", top: "-20px", left: "44%", right: "44%" */
+.aeroPrimary {
+
+  background-color: var(--aero-primary);
+  position: absolute;
+  z-index: 100;
+  top: -20px;
+  left: 44%;
+  right: 44%;
+}
+.pRelative{
+  position: relative;
+  top: 50px;
+}
+
 
 @keyframes floatUpDown {
   0% {
     transform: translateY(0);
   }
+
   50% {
-    transform: translateY(-10px); /* Move up by 10px */
+    transform: translateY(-10px);
+    /* Move up by 10px */
   }
+
   100% {
-    transform: translateY(0); /* Return to original position */
+    transform: translateY(0);
+    /* Return to original position */
   }
 }
 
 .globeAnimation {
   animation: floatUpDown 3s ease-in-out infinite;
 }
-.secBtn{
+
+.secBtn {
   display: none;
 }
 
@@ -364,53 +390,60 @@ a.secondary {
     filter: invert();
   }
 }
+
 /* Default styles for mobile-first design */
 
 /* Small devices (phones, 350px - 575px) */
 @media (min-width: 350px) and (max-width: 575px) {
-  .globeAnimation{
-      display: none;
+  .globeAnimation {
+    display: none;
   }
-  .mainHeading{
+
+  .mainHeading {
     font-size: 3rem;
     font-weight: bold;
   }
-  .mainButton{
+
+  .mainButton {
     padding: 12px 30px;
     font-weight: bold;
     border-radius: 10px;
-    
+
   }
-  .secBtn{
+
+  .secBtn {
     background-color: var(--aero-warning);
     color: var(--aero-black);
   }
-  .secBtn:hover{
+
+  .secBtn:hover {
     background-color: var(--aero-warning-hover);
     color: var(--aero-black);
   }
-  .flowtingDiv{
+
+  .flowtingDiv {
     z-index: 100;
     left: 10px;
     width: 148px;
   }
-  .flowtingDivLower{
+
+  .flowtingDivLower {
     left: 0px;
   }
-  .resNonePartSVG{
+
+  .resNonePartSVG {
     display: none;
+  }
+  .pRelative{
+    top: 0px;
   }
 }
 
 /* Medium devices (tablets, 576px - 767px) */
-@media (min-width: 576px) and (max-width: 767px) {
-
-}
+@media (min-width: 576px) and (max-width: 767px) {}
 
 /* Large devices (small laptops, 768px - 991px) */
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
+@media (min-width: 768px) and (max-width: 991px) {}
 
 /* Extra large devices (desktops, 992px - 1199px) */
 @media (min-width: 992px) and (max-width: 1199px) {

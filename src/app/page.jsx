@@ -86,8 +86,8 @@ export default function Home() {
       </section>
       <MarqueeCarousel></MarqueeCarousel>
       <section className="container pRelative mb-100 mt-100" style={{ height: "auto" }}>
-        <div className="text-center mb-lg-100 mt-lg-100">
-          <h4 style={{ fontWeight: "bold" }}>Your Path To ATPL Success</h4>
+        <div className="text-center mb-100 mt-100">
+          <h4 className="fw-bold">Your Path To ATPL Success</h4>
         </div>
         <div className={styles.resNonePartSVG}>
           <svg className={styles.curveLineleft} width="50%" height="180" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
@@ -108,9 +108,10 @@ export default function Home() {
           </svg>
         </div>
         <div className="row">
+          
           <div className="col-lg-4 p-3 pRelative">
-            <div className={`${styles.circleItem}  aeroPrimary`} >
-              <Image
+            <div className={`${styles.circleItem} ${styles.aeroPrimary}`}>
+            <Image
                 src={'/Images/plane-tilt.svg'}
                 width={25}
                 height={25}
@@ -125,7 +126,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 p-3 pRelative" style={{ top: "50px" }}>
+          <div className={`col-lg-4 p-3 ${styles.pRelative}`}>
             <div className={`${styles.circleItem}`} style={{ backgroundColor: "#FFA726", position: "absolute", zIndex: "100", top: "-20px", left: "44%", right: "44%" }}>
               <Image
                 src={'/Images/icon3.svg'}
@@ -191,7 +192,7 @@ export default function Home() {
           <h4 className="fw-bold">Our Success Stories</h4>
         </div>
         <div className="row mt-50" >
-          <div className="col-lg-3">
+          <div className="col-lg-3 mb-5">
             <div className="card h-100 shadow-sm border border-light rounded-4">
               <div className="card-body text-center">
                 <div className="text-center mb-2">
@@ -208,7 +209,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-lg-3">
+          <div className="col-lg-3 mb-5">
             <div className="card h-100 shadow-sm border border-light rounded-4">
               <div className="card-body text-center">
                 <div className="text-center mb-2">
@@ -225,7 +226,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-lg-3">
+          <div className="col-lg-3 mb-5">
             <div className="card h-100 shadow-sm border border-light rounded-4">
               <div className="card-body text-center">
                 <div className="text-center mb-2">
@@ -242,7 +243,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-lg-3">
+          <div className="col-lg-3 mb-5">
             <div className="card shadow-sm border border-light rounded-4">
               <div className="card-body text-center">
                 <div className="text-center mb-2">
@@ -261,7 +262,7 @@ export default function Home() {
           </div>
         </div>
         <div className="row mb-3">
-          <div className="col-lg-6">
+          <div className="col-lg-6 mb-4">
             <p>When you choose ATPL Pro, you tap into years of aviation expertise. Our cutting-edge platform, combined with top-tier instructors, ensures you’re more than just ‘exam ready’—you’re ready to thrive in the cockpit. Whether you’re targeting EASA, FAA, or other regulatory exams, trust our proven approach to help you soar.</p>
             <div className="card shadow-sm border border-light rounded-4 mb-3">
               <div className="card-body d-flex justify-content-start">
@@ -318,7 +319,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="row w-75 mt-4">
+            <div className="row w-lg-75 mt-4">
               <div className="col-lg-6">
                 <button className={`${styles.btn} ${styles.btnPrimary} mb-3`}>E Shop</button>
               </div>
@@ -357,10 +358,10 @@ export default function Home() {
           />
           <p>ATPL Pro empowers aspiring pilots and aviation professionals with top-quality tools and resources, serving students, flight schools, <br /> and aviation authorities worldwide.</p>
         </div>
-        <div className="row w-100 mt-4">
+        <div className="row mt-4">
           <div className="col-lg-7">
-            <div className="row w-100 mb-4">
-              <div className="col-lg-6">
+            <div className="row mb-4">
+              <div className="col-lg-6 mb-3">
                 <div className="card shadow-sm h-100 border border-light rounded-2 mb-3">
                   <div className="card-body d-flex flex-column align-items-center">
                     <div className={`${styles.circleItem} ${styles.circleColor}`} style={{ width: "60px", height: "60px" }} >
@@ -380,7 +381,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-6 mb-3">
                 <div className="card shadow-sm h-100 border border-light rounded-2 mb-3">
                   <div className="card-body d-flex flex-column align-items-center">
                     <div className={`${styles.circleItem} ${styles.circleColor}`} style={{ width: "60px", height: "60px" }} >
@@ -399,8 +400,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="row w-100 mb-4">
-              <div className="col-lg-6">
+            <div className="row mb-4">
+              <div className="col-lg-6 mb-3">
                 <div className="card shadow-sm h-100 border border-light rounded-2 mb-3">
                   <div className="card-body d-flex flex-column align-items-center">
                     <div className={`${styles.circleItem} ${styles.circleColor}`} style={{ width: "60px", height: "60px" }} >
@@ -418,7 +419,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-6 mb-3">
                 <div className="card shadow-sm h-100 border border-light rounded-2 mb-3">
                   <div className="card-body d-flex flex-column align-items-center">
                     <div className={`${styles.circleItem} ${styles.circleColor}`} style={{ width: "60px", height: "60px" }} >
@@ -469,7 +470,7 @@ export default function Home() {
                 width={492}
                 height={442}
                 alt="pilots"
-                className="mt-100"
+                className="mt-100 w-100"
               />
             </div>
           </div>
@@ -514,6 +515,7 @@ export default function Home() {
                       width={35}
                       height={35}
                       alt="icon"
+                      priority
                     />
                   </div>
                   <div className="text-center mb-3">
