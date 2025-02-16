@@ -99,7 +99,9 @@ a {
 .aeroColorPrimary{
   color: var(--aero-primary);
 }
-
+.offcanvas{
+  display: none;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
