@@ -109,7 +109,7 @@ export default function Home() {
         </div>
         <div className="row">
           
-          <div className="col-lg-4 p-3 pRelative">
+          <div className={`col-lg-4 p-3 pRelative ${styles.pRes}`}>
             <div className={`${styles.circleItem} ${styles.aeroPrimary}`}>
             <Image
                 src={'/Images/plane-tilt.svg'}
@@ -126,7 +126,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className={`col-lg-4 p-3 ${styles.pRelative}`}>
+          <div className={`col-lg-4 p-3 ${styles.pRelative} ${styles.pRes}`}>
             <div className={`${styles.circleItem}`} style={{ backgroundColor: "#FFA726", position: "absolute", zIndex: "100", top: "-20px", left: "44%", right: "44%" }}>
               <Image
                 src={'/Images/icon3.svg'}
@@ -143,7 +143,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 p-3 pRelative">
+          <div className = {`col-lg-4 p-3 pRelative ${styles.pRes}`}>
             <div className={`${styles.circleItem}`} style={{ backgroundColor: "#12BB6A", position: "absolute", zIndex: "100", top: "-20px", left: "44%", right: "44%" }}>
               <Image
                 src={'/Images/chart-pie.svg'}
