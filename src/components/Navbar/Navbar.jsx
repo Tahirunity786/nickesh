@@ -25,7 +25,7 @@ export default function Navbar({ backGround, logoVariation, buttonSignUp }) {
     <nav className={`navbar navbar-expand-lg ${backGround ? backGround : 'bg-white'} ${styles.resMargin} pt-1 pb-lg-5 pRelative`}>
       <div className="container justify-content-sm-start">
         {/* Mobile Menu Toggle */}
-        <div className="d-flex justify-content-between w-100 align-items-center gap-2">
+        <div className={`d-flex justify-content-between ${styles.wRes}  align-items-center gap-2`}>
         <Link className={`navbar-brand ${styles.navbarLogo}`} href="/">
             <Image src={logoVariation} alt="ATPL PRO" width={170} height={70} priority />
           </Link>

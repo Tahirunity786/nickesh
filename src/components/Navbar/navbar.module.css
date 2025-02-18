@@ -75,6 +75,17 @@
     /* Styles for desktops */
   }
   
+  /* Extra large devices (desktops, 992px - 1199px) */
+  @media (max-width: 992px)  {
+    .wRes{
+        width: 100%;
+    
+    }
+    .navigation, .dflexButton{
+        display: none;
+    }
+  }
+  
   /* Extra extra large devices (large desktops, 1200px and up) */
   @media (min-width: 1200px) {
     /* Styles for large desktops */
