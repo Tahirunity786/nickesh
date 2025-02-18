@@ -125,8 +125,88 @@ const Page = () => {
                   </div>
                   <div>
 
-                    <h6 style={{ fontWeight: "bold" }}>Industry Leading Database</h6>
-                    <p className="mb-0">Comprehensive study materials developed by experienced airline captains</p>
+                    <h6 style={{ fontWeight: "bold" }}>Tailored Learning Experience</h6>
+                    <p className="mb-0">Every question is crafted to reflect actual ATPL exam standards, enabling a targeted and personalized learning journey.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mb-4">
+              <div className="card shadow-sm border border-light rounded-4 mb-3">
+                <div className="card-body d-flex justify-content-start">
+                  <div className="text-center mb-2 me-3">
+                    <Image
+                      src={'/Images/circle-check.svg'}
+                      width={25}
+                      height={25}
+                      alt="users"
+                    />
+                  </div>
+                  <div>
+
+                    <h6 style={{ fontWeight: "bold" }}>99% Match Rate with Exams</h6>
+                    <p className="mb-0">With a proven 99% match rate, our questions are validated by thousands of successful pilots worldwide.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mb-4">
+              <div className="card shadow-sm border border-light rounded-4 mb-3">
+                <div className="card-body d-flex justify-content-start">
+                  <div className="text-center mb-2 me-3">
+                    <Image
+                      src={'/Images/circle-check.svg'}
+                      width={25}
+                      height={25}
+                      alt="users"
+                    />
+                  </div>
+                  <div>
+
+                    <h6 style={{ fontWeight: "bold" }}>Comprehensive Coverage</h6>
+                    <p className="mb-0">Covering all essential topics and regulations, our database ensures you're prepared for any challenge in your ATPL exams.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mb-4">
+              <div className="card shadow-sm border border-light rounded-4 mb-3">
+                <div className="card-body d-flex justify-content-start">
+                  <div className="text-center mb-2 me-3">
+                    <Image
+                      src={'/Images/circle-check.svg'}
+                      width={25}
+                      height={25}
+                      alt="users"
+                    />
+                  </div>
+                  <div>
+
+                    <h6 style={{ fontWeight: "bold" }}>Built for Success</h6>
+                    <p className="mb-0">Designed to mirror real-world scenarios, our content helps pilots achieve mastery in aviation fundamentals and beyond.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mb-4">
+              <div className="card shadow-sm border border-light rounded-4 mb-3">
+                <div className="card-body d-flex justify-content-start">
+                  <div className="text-center mb-2 me-3">
+                    <Image
+                      src={'/Images/circle-check.svg'}
+                      width={25}
+                      height={25}
+                      alt="users"
+                    />
+                  </div>
+                  <div>
+
+                    <h6 style={{ fontWeight: "bold" }}>Real-Time Updates</h6>
+                    <p className="mb-0">Our question bank evolves with the latest regulations and exam trends, ensuring you always stay ahead with the most accurate and relevant content.</p>
 
                   </div>
                 </div>
