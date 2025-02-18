@@ -281,6 +281,7 @@ a.secondary {
   position: absolute;
   top: -61px;
   left: 110px;
+  width: 50%;
 }
 
 .curveLineRight {
@@ -305,6 +306,10 @@ a.secondary {
 .pRelative{
   position: relative;
   top: 50px;
+}
+.w100{
+  width: 100%;
+  width: 448px;
 }
 
 
@@ -439,6 +444,7 @@ a.secondary {
   }
   .pRes{
     padding: 0px 50px !important;
+    margin-bottom: 30px;
   }
 }
 
@@ -447,6 +453,13 @@ a.secondary {
   .globeAnimation, .resNone, .resNonePartSVG {
     display: none;
 
+  }
+  .pRelative{
+    top: 0px;
+  }
+  .pRes{
+    padding: 0px 50px !important;
+    margin-bottom: 30px;
   }
   
 }
@@ -457,15 +470,49 @@ a.secondary {
     display: none;
 
   }
-  
+  .pRelative{
+    top: 0px;
+  }
+  .pRes{
+    padding: 0px 50px !important;
+    margin-bottom: 30px;
+  }
 }
 
 /* Extra large devices (desktops, 992px - 1199px) */
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Styles for desktops */
+  .curveLineleft{
+    left: 200px;
+    width: 30%;
+  }
+  .curveLineRight{
+    right: 200px;
+    width:  30%;
+  }
 }
 
-/* Extra extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  /* Styles for large desktops */
+
+
+@media (max-width: 1200px) and (min-width: 1400px) {
+  .curveLineleft{
+    left: 130px;
+  }
+  .curveLineRight{
+    right: 130px;
+  }
+  
+}
+@media  (min-width: 1400px) {
+  .resContainer{
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .curveLineleft{
+    left: 160px;
+  }
+  .curveLineRight{
+    right: 160px;
+  }
+
 }

@@ -7,8 +7,6 @@ import Faqa from "@/components/Faqs/Faqa";
 import VerticalMarqueeCarousel from "@/components/VerticalMarquee/VerticalMarquee";
 
 export default function Home() {
-
-
   return (
     <>
       <section className="container ">
@@ -85,7 +83,7 @@ export default function Home() {
         </div>
       </section>
       <MarqueeCarousel></MarqueeCarousel>
-      <section className="container pRelative mb-100 mt-100" style={{ height: "auto" }}>
+      <section className={`container pRelative mb-100 mt-100 ${styles.resContainer}`} style={{ height: "auto" }}>
         <div className="text-center mb-100 mt-100">
           <h4 className="fw-bold">Your Path To ATPL Success</h4>
         </div>
@@ -108,10 +106,10 @@ export default function Home() {
           </svg>
         </div>
         <div className="row">
-          
+
           <div className={`col-lg-4 p-3 pRelative ${styles.pRes}`}>
             <div className={`${styles.circleItem} ${styles.aeroPrimary}`}>
-            <Image
+              <Image
                 src={'/Images/plane-tilt.svg'}
                 width={25}
                 height={25}
@@ -143,7 +141,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className = {`col-lg-4 p-3 pRelative ${styles.pRes}`}>
+          <div className={`col-lg-4 p-3 pRelative ${styles.pRes}`}>
             <div className={`${styles.circleItem}`} style={{ backgroundColor: "#12BB6A", position: "absolute", zIndex: "100", top: "-20px", left: "44%", right: "44%" }}>
               <Image
                 src={'/Images/chart-pie.svg'}
@@ -470,7 +468,7 @@ export default function Home() {
                 width={492}
                 height={442}
                 alt="pilots"
-                className="mt-100 w-100"
+                className={`mt-100 ${styles.w100}`}
               />
             </div>
           </div>
