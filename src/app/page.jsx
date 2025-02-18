@@ -5,82 +5,34 @@ import UltraMarqueeCarousel from "@/components/Carousal/Carousal";
 import data from '@/app/icData'
 import Faqa from "@/components/Faqs/Faqa";
 import VerticalMarqueeCarousel from "@/components/VerticalMarquee/VerticalMarquee";
+import Grid from "@/components/Grid/Grid";
+import StatCard from "@/components/StatCard/StatCard";
+import InfoCard from "@/components/InfoCard/InfoCard";
 
 export default function Home() {
+  const gridDataForSection1 = [
+    {
+      colSize: 7, content: (<><span><Image src="/Images/globe.svg" width={100} height={100} alt="Globe" className={`pAbsolute ${styles.globeAnimation}`} style={{ left: '-50px', top: '50px' }} /> </span> <span className={`${styles.headerTag} mb-4`}>99% Accurate Database</span> <h1 className={`${styles.mainHeading} mb-4`}>   Your Success <br />   Start With ATPL Pro </h1> <p className={`mb-5 ${styles.mainPara}`}>   ATPL Pro empowers aspiring pilots worldwide with comprehensive ATPL   courses and cutting-edge study resources. </p> <div className="d-flex gap-3">   <button className={styles.mainButton}>Get Started</button>   <button className={`${styles.mainButton} ${styles.secBtn}`}>E Shop</button> </div></>),
+    },
+    {
+      colSize: 5, content: (<div className="pRelative">    <div className={`${styles.flowtingDiv} ${styles.float}`}>      <div className={`${styles.circleItem} aeroGreen`}>        <Image src="/Images/icon2.svg" width={30} height={30} alt="icon" />      </div>      <div className={`${styles.floatContent}`}>        <h6>Total Students</h6>        <p>17K</p>      </div>    </div>    <div className={`${styles.flowtingDivLower} ${styles.float}`}>      <div className={`${styles.circleItem} pAbsolute aeroPurple`} style={{ top: '-20px' }}      >        <Image src="/Images/icon1.svg" width={30} height={30} alt="icon" />      </div>      <div className={`${styles.floatContent} aeroWhiteSmoke rounded-2`} style={{ padding: '10px 15px' }}      >        <h6 className="mt-4">Certified Pilots</h6>        <p className="mb-0">16K</p>      </div>    </div>    <div className={styles.superImage}>      <Image src="Images/pilot-super.svg" width={500} height={500} alt="super image" priority />    </div>  </div>),
+    },
+  ];
+  const statsData = [
+    { iconSrc: '/Images/users.svg', value: '17,000+', label: 'Students Trained' },
+    { iconSrc: '/Images/graduation-cap.svg', value: '99%', label: 'Pass Rate' },
+    { iconSrc: '/Images/blue-star.svg', value: '4.95', label: 'Students Rating' },
+    { iconSrc: '/Images/book-open.svg', value: '14', label: 'Course Modules' },
+  ];
+  const InfoData = [
+    { iconSrc: '/Images/prideBadge.svg', heading: 'Industry Leading Database', paraGraph: 'Comprehensive study materials developed by experienced airline captains' },
+    { iconSrc: '/Images/multiUser.svg', heading: 'Expert Support', paraGraph: 'Get guidance from expert support' },
+    { iconSrc: '/Images/graduation-cap.svg', heading: 'Proven Track Record', paraGraph: 'Join our community of successful pilots worldwide' },
+  ];
   return (
     <>
       <section className="container ">
-        <div className="row">
-          <div className="col-lg-7">
-            <span>
-              <Image
-                src={'/Images/globe.svg'}
-                width={100}
-                height={100}
-                alt="Globe"
-                className={`pAbsolute ${styles.globeAnimation} `}
-                style={{ left: "-50px", top: "50px" }}
-              />
-            </span>
-            <span className={`${styles.headerTag} mb-4`}>99% Accurate Database</span>
-            <h1 className={`${styles.mainHeading} mb-4`}>Your Success <br />
-              Start With  ATPL Pro</h1>
-            <p className={`mb-5 ${styles.mainPara}`}>
-              ATPL Pro empowers aspiring pilots worldwide with comprehensive ATPL
-              courses and cutting-edge study resources.
-            </p>
-            <div className="d-flex gap-3">
-
-              <button className={styles.mainButton}>
-                Get Started
-              </button>
-              <button className={`${styles.mainButton} ${styles.secBtn}`}>
-                E Shop
-              </button>
-            </div>
-
-          </div>
-          <div className="col-lg-5 pRelative">
-            <div className={`${styles.flowtingDiv} ${styles.float}`}>
-              <div className={`${styles.circleItem} aeroGreen`}>
-                <Image
-                  src={'/Images/icon2.svg'}
-                  width={30}
-                  height={30}
-                  alt="icon"
-                />
-              </div>
-              <div className={`${styles.floatContent}`}>
-                <h6>Total Students</h6>
-                <p>17K</p>
-              </div>
-            </div>
-            <div className={`${styles.flowtingDivLower} ${styles.float}`}>
-              <div className={`${styles.circleItem} pAbsolute aeroPurple`} style={{ top: "-20px" }}>
-                <Image
-                  src={'/Images/icon1.svg'}
-                  width={30}
-                  height={30}
-                  alt="icon"
-                />
-              </div>
-              <div className={`${styles.floatContent} aeroWhiteSmoke rounded-2`} style={{ padding: "10px 15px" }}>
-                <h6 className="mt-4">Certified Pilots</h6>
-                <p className="mb-0">16K</p>
-              </div>
-            </div>
-            <div className={styles.superImage}>
-
-              <Image
-                src={'Images/pilot-super.svg'}
-                width={500}
-                height={500}
-                alt="super image"
-                priority
-              />
-            </div>
-          </div>
-        </div>
+        <Grid data={gridDataForSection1} />
       </section>
       <MarqueeCarousel></MarqueeCarousel>
       <section className={`container pRelative mb-100 mt-100 ${styles.resContainer}`} style={{ height: "auto" }}>
@@ -190,132 +142,21 @@ export default function Home() {
           <h4 className="fw-bold">Our Success Stories</h4>
         </div>
         <div className="row mt-50" >
-          <div className="col-lg-3 mb-5">
-            <div className="card h-100 shadow-sm border border-light rounded-4">
-              <div className="card-body text-center">
-                <div className="text-center mb-2">
-                  <Image
-                    src={'/Images/users.svg'}
-                    width={25}
-                    height={25}
-                    alt="users"
-                  />
-                </div>
-                <h6 className="fw-bold">17,000+</h6>
-                <p className="mb-0">Students Trained</p>
-
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 mb-5">
-            <div className="card h-100 shadow-sm border border-light rounded-4">
-              <div className="card-body text-center">
-                <div className="text-center mb-2">
-                  <Image
-                    src={'/Images/graduation-cap.svg'}
-                    width={25}
-                    height={25}
-                    alt="users"
-                  />
-                </div>
-                <h6 className="fw-bold">99%</h6>
-                <p className="mb-0">Pass Rate</p>
-
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 mb-5">
-            <div className="card h-100 shadow-sm border border-light rounded-4">
-              <div className="card-body text-center">
-                <div className="text-center mb-2">
-                  <Image
-                    src={'/Images/blue-star.svg'}
-                    width={25}
-                    height={25}
-                    alt="users"
-                  />
-                </div>
-                <h6 className="fw-bold">4.95</h6>
-                <p className="mb-0">Students Rating</p>
-
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 mb-5">
-            <div className="card shadow-sm border border-light rounded-4">
-              <div className="card-body text-center">
-                <div className="text-center mb-2">
-                  <Image
-                    src={'/Images/book-open.svg'}
-                    width={25}
-                    height={25}
-                    alt="users"
-                  />
-                </div>
-                <h6 className="fw-bold">14</h6>
-                <p className="mb-0">Course Modules</p>
-
-              </div>
-            </div>
-          </div>
+          {statsData.map((stat, index) => (
+            <StatCard
+              key={index}
+              iconSrc={stat.iconSrc}
+              value={stat.value}
+              label={stat.label}
+            />
+          ))}
         </div>
         <div className="row mb-3">
           <div className="col-lg-6 mb-4">
             <p>When you choose ATPL Pro, you tap into years of aviation expertise. Our cutting-edge platform, combined with top-tier instructors, ensures you’re more than just ‘exam ready’—you’re ready to thrive in the cockpit. Whether you’re targeting EASA, FAA, or other regulatory exams, trust our proven approach to help you soar.</p>
-            <div className="card shadow-sm border border-light rounded-4 mb-3">
-              <div className="card-body d-flex justify-content-start">
-                <div className="text-center mb-2 me-3">
-                  <Image
-                    src={'/Images/prideBadge.svg'}
-                    width={25}
-                    height={25}
-                    alt="users"
-                  />
-                </div>
-                <div>
 
-                  <h6 className="fw-bold">Industry Leading Database</h6>
-                  <p className="mb-0">Comprehensive study materials developed by experienced airline captains</p>
+            <InfoCard data={InfoData}/>
 
-                </div>
-              </div>
-            </div>
-            <div className="card shadow-sm border border-light rounded-4 mb-3">
-              <div className="card-body d-flex justify-content-start">
-                <div className="text-center mb-2 me-3">
-                  <Image
-                    src={'/Images/multiUser.svg'}
-                    width={25}
-                    height={25}
-                    alt="users"
-                  />
-                </div>
-                <div>
-
-                  <h6 className="fw-bold">Expert Support</h6>
-                  <p className="mb-0">Get guidance from expert support</p>
-
-                </div>
-              </div>
-            </div>
-            <div className="card shadow-sm border border-light rounded-4 mb-3">
-              <div className="card-body d-flex justify-content-start">
-                <div className="text-center mb-2 me-3">
-                  <Image
-                    src={'/Images/graduation-cap.svg'}
-                    width={25}
-                    height={25}
-                    alt="users"
-                  />
-                </div>
-                <div>
-
-                  <h6 className="fw-bold">Proven Track Record</h6>
-                  <p className="mb-0">Join our community of successful pilots worldwide</p>
-
-                </div>
-              </div>
-            </div>
 
             <div className="row w-lg-75 mt-4">
               <div className="col-lg-6">

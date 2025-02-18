@@ -1,3 +1,4 @@
+
 const cards = [
     { id: 1, image: "/Images/Countries/1.svg", title: "Germany", slogan: "Professional Flight Exam Prep", subSlogan: "Real exam level questions", questions: "8,000+ Questions", activeUsers: "25K+ Active Users", description: "This is the first card." },
     { id: 2, image: "/Images/Countries/2.svg", title: "UK CAA", slogan: "Professional Flight Exam Prep", subSlogan: "Real exam level questions", questions: "8,000+ Questions", activeUsers: "25K+ Active Users", description: "This is the first card." },
