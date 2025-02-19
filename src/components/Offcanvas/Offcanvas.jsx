@@ -7,6 +7,8 @@ import { usePathname, useRouter } from "next/navigation";
 
 const Offcanvas = ({ navlinks }) => {
 
+    const router = useRouter();
+
     const pathname = usePathname();
     return (
         <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style={{ width: "250px" }}>
@@ -28,8 +30,8 @@ const Offcanvas = ({ navlinks }) => {
                         }
                     </ul>
                     <div className='mb-4 '>
-                        <button className={`${styles.navButtonAeroWarning} ${styles.navBtnAro} mb-2`}>E Shop</button>
-                        <button className={`${styles.navButtonAeroPrimary} ${styles.navBtnAro}`}>Sign Up</button>
+                        <button className={`${styles.navButtonAeroWarning} ${styles.navBtnAro} mb-2`} onClick={()=>{router.push('/e-shop')}}>E Shop</button>
+                        <button className={`${styles.navButtonAeroPrimary} ${styles.navBtnAro}`} onClick={()=>{router.push('/register')}}>Sign Up</button>
                     </div>
 
                 </div>
