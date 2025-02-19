@@ -400,6 +400,9 @@ a.secondary {
 /* Default styles for mobile-first design */
 
 /* Small devices (phones, 350px - 575px) */
+@media (max-width: 400px) {
+
+}
 @media (min-width: 350px) and (max-width: 575px) {
 
   .globeAnimation,
@@ -450,6 +453,10 @@ a.secondary {
   .pRes {
     padding: 0px 50px !important;
     margin-bottom: 30px;
+  }
+  .w100{
+    width: 100%;
+    height: auto;
   }
 }
 
