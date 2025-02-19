@@ -211,6 +211,9 @@ a {
     font-size: 10px;
     text-wrap: wrap;
   }
+  .nav-button{
+    display: none;
+  }
 }
 /* Medium devices (tablets, 576px - 767px) */
 @media (min-width: 576px) and (max-width: 767px) {
