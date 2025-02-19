@@ -62,8 +62,8 @@ const Page = () => {
 
 
 
-                <div className="row g-3">
-                    <div className="col-4">
+                <div className="row ">
+                    <div className="col-lg-4 mb-3">
                         <div className="card shadow-sm border border-primary rounded-2 mb-3">
                             <div className="card-body p-0">
                                 <div className='d-flex justify-content-start  bg-primary text-light align-items-center  rounded-top-2 p-3'>
@@ -163,7 +163,7 @@ const Page = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-4">
+                    <div className="col-lg-4 mb-3">
                         <div className="card shadow-sm border border-dark rounded-2 mb-3">
                             <div className="card-body p-0">
                                 <div className='d-flex justify-content-start rounded-top-2 align-items-center p-3'>
@@ -264,7 +264,7 @@ const Page = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-4">
+                    <div className="col-lg-4 mb-3">
                         <div className="card shadow-sm border border-dark rounded-2 mb-3">
                             <div className="card-body p-0">
                                 <div className='d-flex justify-content-start rounded-top-2 align-items-center p-3'>
@@ -365,7 +365,7 @@ const Page = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-4">
+                    <div className="col-lg-4 mb-3">
                         <div className="card shadow-sm border border-dark rounded-2 mb-3">
                             <div className="card-body p-0">
                                 <div className='d-flex justify-content-start rounded-top-2 align-items-center p-3'>

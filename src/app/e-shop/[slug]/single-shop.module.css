@@ -1,6 +1,7 @@
 .feature0bg {
     background-color: var(--aero-primary);
-    height: 248px;
+    height: auto;
+    padding-top: 20px;
     width: 100%;
     margin-bottom: 50px;
     display: flex;
