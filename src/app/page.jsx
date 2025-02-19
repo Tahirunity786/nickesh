@@ -15,7 +15,7 @@ export default function Home() {
       colSize: 7, content: (<><span><Image src="/Images/globe.svg" width={100} height={100} alt="Globe" className={`pAbsolute ${styles.globeAnimation}`} style={{ left: '-50px', top: '50px' }} /> </span> <span className={`${styles.headerTag} mb-4`}>99% Accurate Database</span> <h1 className={`${styles.mainHeading} mb-4`}>   Your Success <br />   Start With ATPL Pro </h1> <p className={`mb-5 ${styles.mainPara}`}>   ATPL Pro empowers aspiring pilots worldwide with comprehensive ATPL   courses and cutting-edge study resources. </p> <div className="d-flex gap-3">   <button className={styles.mainButton}>Get Started</button>   <button className={`${styles.mainButton} ${styles.secBtn}`}>E Shop</button> </div></>),
     },
     {
-      colSize: 5, content: (<div className="pRelative">    <div className={`${styles.flowtingDiv} ${styles.float}`}>      <div className={`${styles.circleItem} aeroGreen`}>        <Image src="/Images/icon2.svg" width={30} height={30} alt="icon" />      </div>      <div className={`${styles.floatContent}`}>        <h6>Total Students</h6>        <p>17K</p>      </div>    </div>    <div className={`${styles.flowtingDivLower} ${styles.float}`}>      <div className={`${styles.circleItem} pAbsolute aeroPurple`} style={{ top: '-20px' }}      >        <Image src="/Images/icon1.svg" width={30} height={30} alt="icon" />      </div>      <div className={`${styles.floatContent} aeroWhiteSmoke rounded-2`} style={{ padding: '10px 15px' }}      >        <h6 className="mt-4">Certified Pilots</h6>        <p className="mb-0">16K</p>      </div>    </div>    <div className={styles.superImage}>      <Image src="Images/pilot-super.svg" width={500} height={500} alt="super image" priority />    </div>  </div>),
+      colSize: 5, content: (<div className="pRelative">    <div className={`${styles.flowtingDiv} ${styles.float}`}>      <div className={`${styles.circleItem} aeroGreen`}>        <Image src="/Images/icon2.svg" width={30} height={30} alt="icon" />      </div>      <div className={`${styles.floatContent}`}>        <h6>Total Students</h6>        <p>17K</p>      </div>    </div>    <div className={`${styles.flowtingDivLower} ${styles.float}`}>      <div className={`${styles.circleItem} pAbsolute aeroPurple`} style={{ top: '-20px' }}      >        <Image src="/Images/icon1.svg" width={30} height={30} alt="icon" />      </div>      <div className={`${styles.floatContent} aeroWhiteSmoke rounded-2`} style={{ padding: '10px 15px' }}><h6 className="mt-4">Certified Pilots</h6><p className="mb-0">16K</p></div></div><div className={styles.superImage}><Image src="/Images/pilot-super-143.png" width={400} height={400} alt="super image" priority unoptimized /></div></div>),
     },
   ];
   const statsData = [
@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <>
       <section className="container ">
-        <Grid data={gridDataForSection1} />
+        <Grid data={gridDataForSection1} isMargin={true} />
       </section>
       <MarqueeCarousel></MarqueeCarousel>
       <section className={`container pRelative mb-100 mt-100 ${styles.resContainer}`} style={{ height: "auto" }}>
@@ -279,7 +279,7 @@ export default function Home() {
             </div>
           </div>
           <div className="col-lg-5">
-            <div className="d-flex align-items-end h-100 w-100 pRelative" >
+            <div className="d-flex align-content-lg-center align-content-sm-end h-100 w-100 pRelative" >
               <Image
                 src={'/Images/border-circle2.svg'}
                 width={50}
@@ -307,9 +307,10 @@ export default function Home() {
               <Image
                 src={'/Images/background__322011.png'}
                 width={492}
-                height={442}
+                height={400}
                 alt="pilots"
                 className={`mt-100 ${styles.w100}`}
+                unoptimized
               />
             </div>
           </div>

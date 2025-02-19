@@ -114,7 +114,8 @@ a.secondary {
   padding: 5px 25px;
   display: inline-block;
   border-radius: 50px;
-
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .mainHeading {
@@ -138,20 +139,19 @@ a.secondary {
 }
 
 .superImage {
-  position: relative;
-  left: -50px;
+  text-align: end;
 }
 
 .float {
   position: absolute;
   border-radius: 10px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .flowtingDiv {
-  width: 170px;
-  top: 30px;
-  left: 0px;
+  width: 140px;
+  top: 0x;
+  left: 30px;
   background-color: #F5F5F5;
   display: flex;
   flex-direction: column;
@@ -161,8 +161,7 @@ a.secondary {
 
 .flowtingDivLower {
   width: 170px;
-
-  right: 20px;
+  left: 0px;
   top: 250px;
   z-index: 100;
   display: flex;
@@ -194,7 +193,7 @@ a.secondary {
 
 .floatContent p {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.3rem;
 
 }
 
@@ -303,11 +302,13 @@ a.secondary {
   left: 44%;
   right: 44%;
 }
-.pRelative{
+
+.pRelative {
   position: relative;
   top: 50px;
 }
-.w100{
+
+.w100 {
   width: 100%;
   width: 448px;
 }
@@ -400,7 +401,9 @@ a.secondary {
 
 /* Small devices (phones, 350px - 575px) */
 @media (min-width: 350px) and (max-width: 575px) {
-  .globeAnimation, .resNone {
+
+  .globeAnimation,
+  .resNone {
     display: none;
   }
 
@@ -439,10 +442,12 @@ a.secondary {
   .resNonePartSVG {
     display: none;
   }
-  .pRelative{
+
+  .pRelative {
     top: 0px;
   }
-  .pRes{
+
+  .pRes {
     padding: 0px 50px !important;
     margin-bottom: 30px;
   }
@@ -450,30 +455,40 @@ a.secondary {
 
 /* Medium devices (tablets, 576px - 767px) */
 @media (min-width: 576px) and (max-width: 767px) {
-  .globeAnimation, .resNone, .resNonePartSVG {
+
+  .globeAnimation,
+  .resNone,
+  .resNonePartSVG {
     display: none;
 
   }
-  .pRelative{
+
+  .pRelative {
     top: 0px;
   }
-  .pRes{
+
+  .pRes {
     padding: 0px 50px !important;
     margin-bottom: 30px;
   }
-  
+
 }
 
 /* Large devices (small laptops, 768px - 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
-  .globeAnimation, .resNone, .resNonePartSVG {
+
+  .globeAnimation,
+  .resNone,
+  .resNonePartSVG {
     display: none;
 
   }
-  .pRelative{
+
+  .pRelative {
     top: 0px;
   }
-  .pRes{
+
+  .pRes {
     padding: 0px 50px !important;
     margin-bottom: 30px;
   }
@@ -481,37 +496,43 @@ a.secondary {
 
 /* Extra large devices (desktops, 992px - 1199px) */
 @media (min-width: 992px) and (max-width: 1199px) {
+
   /* Styles for desktops */
-  .curveLineleft{
+  .curveLineleft {
     left: 200px;
     width: 30%;
   }
-  .curveLineRight{
+
+  .curveLineRight {
     right: 200px;
-    width:  30%;
+    width: 30%;
   }
 }
 
 
 
 @media (max-width: 1200px) and (min-width: 1400px) {
-  .curveLineleft{
+  .curveLineleft {
     left: 130px;
   }
-  .curveLineRight{
+
+  .curveLineRight {
     right: 130px;
   }
-  
+
 }
-@media  (min-width: 1400px) {
-  .resContainer{
+
+@media (min-width: 1400px) {
+  .resContainer {
     padding-left: 80px;
     padding-right: 80px;
   }
-  .curveLineleft{
+
+  .curveLineleft {
     left: 160px;
   }
-  .curveLineRight{
+
+  .curveLineRight {
     right: 160px;
   }
 
