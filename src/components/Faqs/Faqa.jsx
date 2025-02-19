@@ -17,21 +17,7 @@ const Faqa = () => {
     { name: 'support', style: styles.outlinenav },
   ];
 
-  // FAQ data structure with categories
-  const faqs = {
-    About: [
-      { question: 'Are the questions on ATPLPro the same as those in the real EASA exam?', answer: 'Yes, we regularly update our database to match the latest exam formats.' },
-      { question: 'Which examination database is currently implemented in my country?', answer: 'You can check the supported databases in our platform settings.' },
-    ],
-    'Our Services': [
-      { question: 'Does ATPLPro help save time in exam preparation?', answer: 'Absolutely! Our platform is designed for efficient learning with exam-like questions.' },
-      { question: 'How often are new questions added?', answer: 'New questions are added every month based on syllabus updates.' },
-    ],
-    Support: [
-      { question: 'How can I contact customer support?', answer: 'You can reach out via email or live chat support on our website.' },
-      { question: 'Is there a refund policy?', answer: 'Yes, we offer a refund within the first 7 days of subscription.' },
-    ],
-  };
+
 
   // Toggle collapse state for FAQ items
   const toggleFaq = (index) => {
@@ -95,13 +81,13 @@ const Faqa = () => {
               <div
                 className={`collapse-content ${openIndex === index ? 'show' : ''}`}
                 style={{
-                  maxHeight: openIndex === index ? '100px' : '0',
+                  maxHeight: openIndex === index ? '300px' : '0',
                   overflow: 'hidden',
                   transition: 'max-height 0.3s ease-in-out',
                   marginBottom:"20px"
                 }}
               >
-                <p className="px-3 py-2 mb-2 h-100">{faq.answer}</p>
+                <p className="px-3 py-2 mb-2">{faq.answer}</p>
               </div>
             </div>
           ))}
