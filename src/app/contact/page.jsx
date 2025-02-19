@@ -20,7 +20,7 @@ const Page = () => {
       </section>
       <section className="mt-5 mb-5 container">
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-6 mb-4">
             <h2 style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "20px" }}>Contact Us</h2>
             <div className="card rounded-4 border-0 ps-0 mb-2">
               <div className="card-body d-flex justify-content-start ps-0 ">
