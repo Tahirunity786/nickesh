@@ -102,6 +102,95 @@ a {
 .offcanvas{
   display: none;
 }
+.carousel-container {
+  width: 60%;
+  position: relative;
+  overflow: hidden;
+}
+
+.mySwiper {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.swiper-slide-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px; /* Adjust width as needed */
+}
+
+.btn-nx-recent {
+  text-wrap: nowrap;
+  outline: none;
+  border: 3px solid var(--nx-color-primary);
+  background-color: white;
+  border-radius: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  height: 45px;
+  transition: 0.3s all ease-in-out;
+  font-size: 14px;
+  border: 1px solid #007bff;
+  cursor: pointer;
+}
+
+.btn-nx-recent:hover {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-nx-recent.active-btn {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+/* Navigation buttons */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.nav-button.left {
+  left: 0px;
+}
+
+.nav-button.right {
+  right: 0px;
+}
+
+.nav-button:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Hide buttons when not needed */
+.nav-button.hidden {
+  display: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .carousel-container {
+    width: 60%;
+  }
+ 
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {
