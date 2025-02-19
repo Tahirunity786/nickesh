@@ -207,6 +207,10 @@ a {
   .offcanvas{
     display: block;
   }
+  .btn-nx-recent{
+    font-size: 10px;
+    text-wrap: wrap;
+  }
 }
 /* Medium devices (tablets, 576px - 767px) */
 @media (min-width: 576px) and (max-width: 767px) {

@@ -59,7 +59,7 @@ const Page = () => {
               slidesPerView={6}
               spaceBetween={15}
               breakpoints={{
-                350: { slidesPerView: 2, spaceBetween: 10 },
+                350: { slidesPerView: 1, spaceBetween: 10 },
                 640: { slidesPerView: 2, spaceBetween: 15 },
                 768: { slidesPerView: 3, spaceBetween: 20 },
                 1024: { slidesPerView: 3, spaceBetween: 10 },
