@@ -185,8 +185,8 @@ const Page = () => {
             <h3>Revolutionizing Aviation training</h3>
             <p>Our team consists of experienced pilots, certified instructors, and aviation experts committed to your success.</p>
             <div>
-              <div className="row g-3">
-                <div className="col-4">
+              <div className="row ">
+                <div className="col-lg-4 mb-3">
                   <div className="card w-100 text-start">
                     {/* <img src="..." className="card-img-top" alt="..."/> */}
                     <Image
@@ -204,7 +204,7 @@ const Page = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-4">
+                <div className="col-lg-4 mb-3">
                   <div className="card w-100 text-start">
                     {/* <img src="..." className="card-img-top" alt="..."/> */}
                     <Image
@@ -222,7 +222,7 @@ const Page = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-4">
+                <div className="col-lg-4 mb-3">
                   <div className="card w-100 text-start">
                     {/* <img src="..." className="card-img-top" alt="..."/> */}
                     <Image
@@ -256,8 +256,8 @@ const Page = () => {
             <h3>Revolutionizing Aviation training</h3>
             <p>Our team consists of experienced pilots, certified instructors, and aviation experts committed to your success.</p>
             <div>
-              <div className="row g-3">
-                <div className="col-4">
+              <div className="row">
+                <div className="col-lg-4 mb-3">
                   <div className="card shadow-sm border border-light rounded-2 mb-3">
                     <div className="card-body d-flex flex-column align-items-center justify-content-between">
                     <div className={`${styles.circleItem} ${styles.circleColor} mb-3`} style={{ width: "60px", height: "60px" }} >
@@ -277,7 +277,7 @@ const Page = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-4">
+                <div className="col-lg-4 mb-3">
                   <div className="card shadow-sm border border-light rounded-2 mb-3">
                     <div className="card-body d-flex flex-column align-items-center justify-content-between">
                     <div className={`${styles.circleItem} ${styles.circleColor} mb-3`} style={{ width: "60px", height: "60px" }} >
@@ -297,7 +297,7 @@ const Page = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-4">
+                <div className="col-lg-4 mb-3">
                   <div className="card shadow-sm border border-light rounded-2 mb-3">
                     <div className="card-body d-flex flex-column align-items-center justify-content-between">
                       <div className={`${styles.circleItem} ${styles.circleColor} mb-3`} style={{ width: "60px", height: "60px" }} >
